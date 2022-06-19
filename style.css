@@ -131,6 +131,21 @@ form textarea{
     font-size: 1.6rem;
     color: #7c7c7c;
 }
+form button{
+    width: 7.2rem;
+    height: 3.6rem;
+    color: white;
+    background-color: #996830;
+    border: none;
+    border-radius: 0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: 0.5s ease-in-out;
+}
+form button:hover{
+    background-color: #C4A386;
+}
 footer{
     position: absolute;
     bottom: 0px;
@@ -215,14 +230,4 @@ footer ul li img{
     height: 24px;
     width: 24px;
     margin-right: 1vw;
-}
-.input--button{
-    width: 7.2rem;
-    color: white;
-    background-color: #996830;
-    border: none;
-    border-radius: 0;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
 }
