@@ -23,47 +23,6 @@ a:visited{
     color: #E6D8CC;
     text-decoration: none;
 }
-header{
-    position: absolute;
-    top: 0px;
-    background-color: #444444;
-    height: 72px;
-    width: 100%;
-    border-bottom-style: solid;
-    border-bottom-color: #996830;
-    border-bottom-width: 1px;
-}
-header nav{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-header nav picture{
-    height: 100%;
-    padding: 1vh;
-}
-header nav picture a img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-header nav ul{
-    display: flex;
-    justify-content: space-around;
-}
-header nav ul li{
-    display: inline-block;
-    padding: 2.0rem;
-}
-main{
-    width:  100%;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    overflow: overlay;
-}
 h1{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -96,26 +55,68 @@ h5{
     font-size: 2.4rem;
     color: #C4A386;
 }
+header{
+    position: absolute;
+    top: 0px;
+    background-color: #444444;
+    height: 7rem;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: #996830;
+    border-bottom-width: 1px;
+}
+header nav{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav picture{
+    height: 100%;
+    padding: 1vh;
+}
+header nav picture a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 2.0rem;
+}
+main{
+    width:  100%;
+    height: 100%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    overflow: overlay;
+}
 main section picture{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 2rem;
     opacity: 0.5;
+    border-radius: 2rem;
     background-color: #444444;
     transition: 0.5s ease-in-out;
 }
 main section picture:hover{
     opacity: 1;
 }
-a img{
+main section a img{
     object-fit: cover;
     height: 100%;
     width: 100%;
-    transition: 0.5s ease-in-out;
+    border-radius: 2rem;
 }
-a img:hover{
-    transform: scale(1.1);
+form{
+    width: 80%;
 }
 form label{
     display: none;
@@ -131,6 +132,7 @@ form input{
     font-weight: 300;
     font-size: 1.6rem;
     color: #7c7c7c;
+    background-color: #F0EAE4;
 }
 form textarea{
     width: 100%;
@@ -143,6 +145,7 @@ form textarea{
     font-weight: 300;
     font-size: 1.6rem;
     color: #7c7c7c;
+    background-color: #F0EAE4;
 }
 form button{
     width: 7.2rem;
@@ -163,7 +166,7 @@ footer{
     position: absolute;
     bottom: 0px;
     background-color: #444444;
-    height: 72px;
+    height: 7rem;
     width: 100%;
     border-top-style: solid;
     border-top-color: #996830;
@@ -194,35 +197,60 @@ footer ul li img{
     height: 2.0rem;
     width: 2.0rem;
 }
-.div--bkgd--dragon{
-    background-image: url(./images/Dragonn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
-}
-.div--bkgd--eagle{
-    background-image: url(./images/Aguilaa.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
-}
-.div--bkgd--horse{
-    background-image: url(https://github.com/ferlagher/Asgard-Laguna/blob/main/images/Caballo.png?raw=true);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
-}
 .div--container{
     position: relative;
     min-height: 100vh;
     width: 100vw;
 }
+.div--bkgd--dragon{
+    background-image: url(./images/bkgd-dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover 150vmin;
+    background-position: top right;
+    background-origin: content-box;
+    padding-top: 7rem;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.div--bkgd--eagle{
+    background-image: url(./images/bkgd-eagle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-origin: content-box;
+    padding-top: 8rem;
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.div--bkgd--horse{
+    background-image: url(./images/bkgd-horse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-origin: content-box;
+    padding-top: 8rem;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
 .section--right{
     margin: 5vw 15vw 5vw 45vw;
-    width: 45vw;
+    width: 40vw;
+    height: 100%;
 }
 .section--center{
     margin: 5vw 15vw 5vw 15vw;
+}
+.gallery--img{
+        transition: 0.5s ease-in-out;
+}
+.gallery--img:hover{
+    transform: scale(1.1);
 }
 .gallery--grid{
     aspect-ratio: 3 / 4;
