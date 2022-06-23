@@ -33,11 +33,17 @@ header{
     border-bottom-color: #996830;
     border-bottom-width: 1px;
 }
-header nav picture{
+header nav{
     position: absolute;
-    left: 175px;
-    width: 84px;
-    height: 65px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav picture{
+    height: 100%;
+    padding: 1vh;
 }
 header nav picture a img{
     width: 100%;
@@ -45,14 +51,12 @@ header nav picture a img{
     object-fit: contain;
 }
 header nav ul{
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    right: 143px;
+    display: flex;
+    justify-content: space-around;
 }
 header nav ul li{
     display: inline-block;
-    margin: 0px 32px 0px 32px;
+    padding: 2.0rem;
 }
 main{
     width:  100%;
@@ -93,16 +97,25 @@ h5{
     color: #C4A386;
 }
 main section picture{
-    float: left;
-    width: 21vw;
-    height: 21vw;
-    margin: 1.5%;
-}
-a img{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+    opacity: 0.5;
+    background-color: #444444;
+    transition: 0.5s ease-in-out;
+}
+main section picture:hover{
+    opacity: 1;
+}
+a img{
     object-fit: cover;
-    object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+a img:hover{
+    transform: scale(1.1);
 }
 form label{
     display: none;
@@ -155,10 +168,11 @@ footer{
     border-top-style: solid;
     border-top-color: #996830;
     border-top-width: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer span{
-    display: inline-block;
-    position: absolute;
     top: 20px;
     left: 175px;    
     font-family: 'Outfit', sans-serif;
@@ -167,36 +181,36 @@ footer span{
     color: #E6D8CC;
 }
 footer ul{
-    display: inline-block;
-    position: absolute;
     top: 20px;
     right: 143px;
+    display: flex;
+    justify-content: space-around;
 }
 footer ul li{
     display: inline-block;
-    margin: 0px 32px 0px 32px;
+    padding: 2.0rem;
 }
 footer ul li img{
-    height: 24px;
-    width: 24px;
+    height: 2.0rem;
+    width: 2.0rem;
 }
 .div--bkgd--dragon{
-    background-image: url(https://github.com/ferlagher/Asgard-Laguna/blob/main/images/Drag%C3%B3n.png?raw=true);
+    background-image: url(./images/Dragonn.png);
     background-repeat: no-repeat;
-    background-size: 250vh;
-    background-position: -70vw -20vh;
+    background-size: contain;
+    background-position: bottom left;
 }
 .div--bkgd--eagle{
-    background-image: url(https://github.com/ferlagher/Asgard-Laguna/blob/main/images/%C3%81guila.png?raw=true);
+    background-image: url(./images/Aguilaa.png);
     background-repeat: no-repeat;
-    background-size: 100vh;
-    background-position: -3vw 15vh;
+    background-size: contain;
+    background-position: bottom left;
 }
 .div--bkgd--horse{
     background-image: url(https://github.com/ferlagher/Asgard-Laguna/blob/main/images/Caballo.png?raw=true);
     background-repeat: no-repeat;
-    background-size: 80vh;
-    background-position: -0vw 10vh;
+    background-size: contain;
+    background-position: bottom left;
 }
 .div--container{
     position: relative;
@@ -211,6 +225,38 @@ footer ul li img{
 .section--center{
     float:left;
     margin: 5vw 15vw 5vw 15vw;
+}
+.gallery--grid{
+    aspect-ratio: 3 / 4;
+    display: grid;
+/*     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
+    gap: 1rem;
+    grid-template-areas: 
+        "img1 img2 img2"
+        "img1 img3 img4"
+        "img5 img5 img4"
+        "img5 img5 img6";
+    justify-items: center;
+    align-items: center;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
 }
 .div--project{
     float: left;
