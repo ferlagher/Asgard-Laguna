@@ -218,12 +218,10 @@ footer ul li img{
     width: 100vw;
 }
 .section--right{
-    float: right;
-    margin: 5vw 15vw 5vw 0vw;
+    margin: 5vw 15vw 5vw 45vw;
     width: 45vw;
 }
 .section--center{
-    float:left;
     margin: 5vw 15vw 5vw 15vw;
 }
 .gallery--grid{
@@ -269,7 +267,7 @@ footer ul li img{
     height: 50vh;
 }
 .li--contact{
-    display: inline-block;
+    display: block;
     margin: 1vh 0 1vh 0;
 }
 .img--contact{
