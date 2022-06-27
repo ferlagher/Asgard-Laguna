@@ -6,6 +6,9 @@
 html{
     font-size: 62.5%;
 }
+*:focus {
+    outline: none;
+}
 body{
     background-color: #202529
 }
@@ -146,15 +149,25 @@ section ul{
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 2.0rem;
 }
 section ul li{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
+}
+section ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
 }
 section ul li svg{
 fill: #F3F5F8;
 height: 2.4rem;
 width: 2.4rem;
+}
+section ul li a:hover svg{
+    fill: #A4571F;
 }
 img{
     object-fit: cover;
@@ -179,8 +192,10 @@ form input{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
-    color: #4C555C;
     background-color: #F3F5F8;
+}
+form input::placeholder{
+    color: #A4571F;
 }
 form textarea{
     height: 13rem;
@@ -190,8 +205,10 @@ form textarea{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
-    color: #4C555C;
     background-color: #F3F5F8;
+}
+form textarea::placeholder{
+    color: #A4571F;
 }
 form button{
     width: 7.2rem;
@@ -234,6 +251,7 @@ footer ul{
     right: 143px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 footer ul li{
     display: inline-block;
@@ -291,6 +309,7 @@ footer ul li svg:hover{
     background-size: cover;    
     border-radius: 0.4rem;
     height: 30rem;
+    box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,6 +392,7 @@ footer ul li svg:hover{
     opacity: 0.5;
     border-radius: 0.4rem;
     background-color: #444444;
+    box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
     transition: 0.5s ease-in-out;
 }
 .section--gallery picture:hover{
@@ -406,6 +426,7 @@ transform: scale(1.1);
     position: relative;
     overflow: hidden;
     border-radius: 0.4rem;
+    box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
 }
 .div--project:hover .project--title{
     transform: translateY(100%);
@@ -414,14 +435,14 @@ transform: scale(1.1);
     opacity: 1;
 }
 .project--title{
-    background-color: #444444;
+    background-color: #202529;
     width: 100%;
     height: 35%;
     position: absolute;
     bottom: 0%;
     padding: 1.0rem;
     border-top: 0.1rem solid #4C555C;
-    box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0rem -0.1rem 0.5rem rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     transition: 0.5s ease-in;
@@ -432,7 +453,7 @@ transform: scale(1.1);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 0.5s ease-in-out;
 }
 .project1{
@@ -484,7 +505,8 @@ object-fit: contain;
 .section--contact div{
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2.5rem;
 }
 .div--grow1{
     flex-grow: 1;
