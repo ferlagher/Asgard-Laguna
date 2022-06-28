@@ -10,7 +10,15 @@ html{
     outline: none;
 }
 body{
-    background-color: #202529
+    width: 100%;
+    background-color: #202529;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 6.4rem auto 6.4rem;
+    grid-template-columns: auto;
 }
 a:link{
     font-family: 'Roboto Condensed', sans-serif;
@@ -43,11 +51,11 @@ h3{
     font-weight: 100;
     font-size: 3.6rem;
     color: #F3F5F8;
-    margin: 7.0rem 14.0rem 7.0rem 14.0rem;
-    display: table;
-    white-space: nowrap;
+    margin: 7.2rem auto 7.2rem auto;
+/*     display: table;
+    white-space: nowrap; */
 }
-h3::before{
+/* h3::before{
     background: linear-gradient(to bottom, #F3F5F8, #F3F5F8) no-repeat center / 95% 0.03em;
     content: '';
     display: table-cell;
@@ -59,7 +67,7 @@ h3::after{
     display: table-cell;
     width: 50%;
     height: 0.2rem;
-}
+} */
 h4{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
@@ -85,27 +93,34 @@ span{
     font-size: 1.8rem;
     color: #F3F5F8; 
 }
+svg{
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: #4C555C;
+}
+svg:hover{
+    fill: #A4571F;
+}
 /* HEADER */
+
 header{
-    position: absolute;
-    top: 0px;
-    background-color: #202529;
-    height: 6.4rem;
+    grid-area: header;
+    height: 100%;
     width: 100%;
+    background-color: #202529;
     border-bottom: 1px solid #4C555C;
+    padding: 0 14.0rem 0 14.0rem;
 }
 header nav{
-    position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 14rem 0 14rem;
+/*     padding: 0 14rem 0 14rem; */
 }
 header nav picture{
-    height: 100%;
-    padding: 2rem 0 2rem 0;
+    height: 3.0rem;
 }
 header nav picture a svg{
     width: 100%;
@@ -116,28 +131,31 @@ header nav picture a svg:hover{
     fill: #A4571F;
 }
 header nav ul{
+/*     padding: 2.0rem 0 2.0rem 0; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.0rem;
 }
 header nav ul li{
     display: inline-block;
-    padding: 2.0rem;
 }
-header nav ul li a:link{
+header nav ul li a span{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
     color: #4C555C;
 }
-header nav ul li a:visited{
-    color: #4C555C;
-}
-header nav ul li a:hover{
+header nav ul li a span:hover{
 color: #A4571F;
 }
+header nav ul li a svg{
+    display: none;
+}
+
 /* MAIN */
+
 main{
-    width:  100%;
-    height: 100%;
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,8 +182,9 @@ section ul li a{
 }
 section ul li svg{
 fill: #F3F5F8;
-height: 2.4rem;
-width: 2.4rem;
+}
+section ul li svg:hover{
+    fill: #F3F5F8;
 }
 section ul li a:hover svg{
     fill: #A4571F;
@@ -226,13 +245,12 @@ form button{
 form button:hover{
     background-color: #d58b55;
 }
+
 /* FOOTER */
+
 footer{
-    position: absolute;
-    bottom: 0px;
+    grid-area: footer;
     background-color: #202529;
-    height: 6.4rem;
-    width: 100%;
     border-top: 1px solid #4C555C;
     padding: 0 14.0rem 0 14.0rem;
     display: flex;
@@ -248,33 +266,21 @@ footer span{
     color: #4C555C;
 }
 footer ul{
-    top: 20px;
-    right: 143px;
+    width: 15.0rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 2.0rem;
 }
 footer ul li{
     display: inline-block;
-    padding: 2.0rem;
 }
-footer ul li svg{
-    height: 2.4rem;
-    width: 2.4rem;
-    fill: #4C555C
-}
-footer ul li svg:hover{
-    fill: #A4571F;
-}
-.div--container{
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-}
+
 /* INDEX */
+
 .section--hero{
     background-image: url(./images/hero.jpg);
-    object-fit: cover;
+    background-size: cover;
     background-position: top right;
     background-attachment: fixed;
     box-shadow: inset 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3), inset 0rem -0.3rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -285,20 +291,21 @@ footer ul li svg:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 }
 .section--hero::after{
     content: '';
     position: absolute;
-    top: 6.4rem;
+    top: 0;
     left: 0;
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(90deg, rgba(32,37,41,0) 40%, rgba(32,37,41,1) 100%);
     opacity: 0.3;
 }
 .section--nav{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -309,7 +316,7 @@ footer ul li svg:hover{
     background-position: center;
     background-size: cover;    
     border-radius: 0.4rem;
-    height: 30rem;
+    height: 30.0rem;
     box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -319,11 +326,11 @@ footer ul li svg:hover{
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 37, 41, 0.5);
     transition: 0.5s ease-in-out;
 }
 .div--nav a:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(32, 37, 41, 0.2);
 }
 .div--nav a span{
     font-size: 2.7rem;
@@ -335,27 +342,27 @@ footer ul li svg:hover{
 }
 .nav1{
     background-image: url(./images/nav1.jpg);
-    min-width: 30%;
+    min-width: 30.0rem;
     flex-grow: 1;
-    aspect-ratio: 1 / 1;
 }
 .nav2{
     background-image: url(./images/nav2.jpg);
-    min-width: 60%;
+    min-width: 50.0rem;
     flex-grow: 2;
 }
 .nav3{
     background-image: url(./images/nav3.jpg);
-    min-width: 60%;
+    min-width: 50.0rem;
     flex-grow: 2;
 }
 .nav4{
     background-image: url(./images/nav4.jpg);
-    min-width: 30%;
+    min-width: 30.0rem;
     flex-grow: 1;
-    aspect-ratio: 1 / 1;
 }
+
 /* GALLERY */
+
 .section--gallery{
     width: 100%;
     display: grid;
@@ -406,7 +413,9 @@ footer ul li svg:hover{
 .section--gallery picture a img:hover{
 transform: scale(1.1);
 }
+
 /* PROYECTS */
+
 .section--projects{
     width: 100%;
     display: flex;
@@ -469,7 +478,9 @@ transform: scale(1.1);
 .project4{
     background-image: url(./images/grapes.jpg);
 }
+
 /* ABOUT */
+
 .section--about{
     width: 100%;
     height: 100%;
@@ -495,7 +506,9 @@ object-fit: contain;
     flex-direction: column;
     gap: 1.5rem;
 }
+
 /* CONTACT */
+
 .section--contact{
     width: 100%;
     display: flex;
@@ -518,4 +531,77 @@ object-fit: contain;
 }
 .h4--white{
     color: #F3F5F8;
+}
+
+@media (max-width: 600px){
+    body{
+        grid-template-rows: 4.8rem auto 4.8rem;
+    }
+    a:link{
+        font-size: 1.6rem;
+    }
+    h1{
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+    h3{
+        font-size: 2.2rem;
+        margin: 4.4rem 1.0rem 4.4rem 1.0rem;
+    }
+    h4{
+        font-size: 1.8rem;
+    }
+    h5{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    span{
+        font-size: 1.6rem;
+    }
+    
+    /* HEADER */
+    
+    header{
+        padding: 0 2.2rem 0 2.2rem;
+    }
+    header nav{
+        gap: 6.4rem;
+    }
+    header nav picture a svg{
+        height: 2.2rem;
+    }
+    header nav ul{
+        flex-grow: 1;
+    }
+    header nav ul li a span{
+        display: none;
+    }
+    header nav ul li a svg{
+        width: 2.2rem;
+        height: 2.2rem;
+        display: inline-block;
+    }
+    
+    /* MAIN */
+    
+    section{
+        padding: 1.0rem;
+    }
+    .section--hero{
+        background-position: center;
+    }
+    /* FOOTER */
+    footer{
+        padding: 0 2.2rem 0 2.2rem;
+    }
+    footer span{
+        font-size: 1.4rem;
+    }
+    .div--nav a span{
+        font-size: 2.2rem;
+    }
 }
