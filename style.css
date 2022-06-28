@@ -36,7 +36,7 @@ h1{
     font-weight: 700;
     font-size: 6.4rem;
     color: #F3F5F8;
-    text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(26, 30, 34, 0.15);
     z-index: 1;
 }
 h2{
@@ -86,6 +86,7 @@ p{
     font-size: 1.8rem;
     color: #F3F5F8;
     line-height: 1.5;
+    margin-bottom: 2.0rem;
 }
 span{
     font-family: 'Roboto', sans-serif;
@@ -212,7 +213,10 @@ form input{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
-    background-color: #F3F5F8;
+    color: #F3F5F8;
+    padding: 0.5rem;
+    background-color: #191e22;
+    box-shadow: inset 0 0 0.3rem 0.2rem rgba(26, 30, 34, 0.35);
 }
 form input::placeholder{
     color: #A4571F;
@@ -225,7 +229,10 @@ form textarea{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
-    background-color: #F3F5F8;
+    color: #F3F5F8;
+    padding: 0.5rem;
+    background-color: #191e22;
+    box-shadow: inset 0 0 0.3rem 0.2rem rgba(26, 30, 34, 0.35);
 }
 form textarea::placeholder{
     color: #A4571F;
@@ -335,6 +342,7 @@ footer ul li{
 .div--nav a span{
     font-size: 2.7rem;
     font-weight: 300;
+    text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -347,12 +355,12 @@ footer ul li{
 }
 .nav2{
     background-image: url(./images/nav2.jpg);
-    min-width: 50.0rem;
+    min-width: 50%;
     flex-grow: 2;
 }
 .nav3{
     background-image: url(./images/nav3.jpg);
-    min-width: 50.0rem;
+    min-width: 50%;
     flex-grow: 2;
 }
 .nav4{
@@ -484,27 +492,13 @@ transform: scale(1.1);
 .section--about{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 4rem;
 }
-.section--about picture{
+.section--about img{
     float: left;
     width: 30%;
-    min-width: 250px;
-    flex-grow: 1;
-}
-.section--about picture img{
-    object-position: top left;
-object-fit: contain;
-}
-.section--about article{
-    flex-basis: 60%;
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    height: auto;
+    min-width: 30.0rem;
+    margin-right: 4.0rem;
 }
 
 /* CONTACT */
@@ -589,19 +583,63 @@ object-fit: contain;
     /* MAIN */
     
     section{
-        padding: 1.0rem;
+        padding: 0 1.0rem 4.0rem;
     }
+    
+    /* INDEX */
+    
     .section--hero{
         background-position: center;
+        height: 60vh;
     }
+    .section--nav{
+        gap: 2.0rem;
+    }
+    .div--nav{
+        height: 20.0rem;
+    }
+    .div--nav a span{
+        font-size: 2.2rem;
+    }
+    
+    /* GALLERY */
+    
+    .section--gallery{
+        gap: 1.0rem;
+    }
+    .section--gallery picture{
+        opacity: 1;
+    }
+    
+    /* PROJECTS */
+    
+    .project{
+        opacity: 1;
+    }
+    
+    /* ABOUT */
+    
+    .section--about{
+        gap: 2.0rem;
+    }
+    .section--about img{
+        min-width: 18.0rem;
+        margin-right: 1.0rem;
+    }
+    
+    /* CONTACT */
+    
+    .div--grow1{
+        flex-flow: row wrap;
+        gap: 1.0rem;
+    }
+    
     /* FOOTER */
+    
     footer{
         padding: 0 2.2rem 0 2.2rem;
     }
     footer span{
         font-size: 1.4rem;
-    }
-    .div--nav a span{
-        font-size: 2.2rem;
     }
 }
