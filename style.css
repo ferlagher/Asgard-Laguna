@@ -93,6 +93,7 @@ svg{
 svg:hover{
     fill: #A4571F;
 }
+
 /* HEADER */
 
 header{
@@ -178,7 +179,7 @@ section ul li a{
     gap: 1.0rem;
 }
 section ul li svg{
-fill: #F3F5F8;
+    fill: #F3F5F8;
 }
 section ul li svg:hover{
     fill: #F3F5F8;
@@ -439,7 +440,7 @@ footer ul li{
     transition: 0.5s ease-in-out;
 }
 .section--gallery picture a img:hover{
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* PROYECTS */
@@ -670,7 +671,7 @@ transform: scale(1.1);
     .div--grow1 div span{
         white-space: nowrap;
     }
-
+    
     /* FOOTER */
     
     footer{
@@ -715,7 +716,7 @@ transform: scale(1.1);
     .section--hero{
         background-position-x: 35%;
     }
-
+    
     /* GALLERY */
     
     .section--gallery{
