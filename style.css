@@ -39,6 +39,7 @@ h1{
     color: #F3F5F8;
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(26, 30, 34, 0.15);
     z-index: 1;
+    white-space: nowrap;
 }
 h2{
     font-family: 'Roboto', sans-serif;
@@ -52,7 +53,7 @@ h3{
     font-weight: 100;
     font-size: 3.6rem;
     color: #F3F5F8;
-    margin: 7.2rem 14.0rem 7.2rem 14.0rem;
+    margin: 7.2rem 10% 7.2rem 10%;
 /*     display: table;
     white-space: nowrap; */
 }
@@ -111,7 +112,7 @@ header{
     width: 100%;
     background-color: #202529;
     border-bottom: 1px solid #4C555C;
-    padding: 0 14.0rem 0 14.0rem;
+    padding: 0 10% 0 10%;
 }
 header nav{
     height: 100%;
@@ -168,7 +169,7 @@ main{
 }
 section{
     height: 100%;
-    padding: 0 14.0rem 7.0rem 14.0rem;
+    padding: 0 10% 7.0rem 10%;
 }
 section ul{
     display: flex;
@@ -266,7 +267,7 @@ footer{
     grid-area: footer;
     background-color: #202529;
     border-top: 1px solid #4C555C;
-    padding: 0 14.0rem 0 14.0rem;
+    padding: 0 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -398,8 +399,9 @@ footer ul li{
     grid-template-areas: 
         "img1 img2 img2"
         "img1 img3 img4"
-        "img5 img5 img4"
-        "img5 img5 img6";
+        "img5 img7 img4"
+        "img8 img7 img6"
+        "img8 img9 img9";
     justify-items: center;
     align-items: center;
 }
@@ -420,6 +422,15 @@ footer ul li{
 }
 .img6{
     grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
 }
 .section--gallery picture{
     width: 100%;
@@ -710,6 +721,12 @@ transform: scale(1.1);
         padding: 0 1.0rem 4.0rem 1.0rem;
     }
     
+    /* INDEX */
+    
+    .section--hero{
+        background-position-x: 35%;
+    }
+
     /* GALLERY */
     
     .section--gallery{
