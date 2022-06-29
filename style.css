@@ -200,6 +200,7 @@ img{
     object-fit: cover;
     height: 100%;
     width: 100%;
+    border-radius: 0.4rem;
 }
 form{
     width: 100%;
@@ -515,9 +516,9 @@ transform: scale(1.1);
 }
 .section--about img{
     float: left;
-    width: 30%;
+    width: 25%;
     height: auto;
-    min-width: 30.0rem;
+    min-width: 20.0rem;
     margin-right: 4.0rem;
 }
 
@@ -653,7 +654,6 @@ transform: scale(1.1);
         gap: 2.0rem;
     }
     .section--about img{
-        min-width: 32.0rem;
         margin-right: 1.0rem;
     }
     
@@ -719,7 +719,7 @@ transform: scale(1.1);
     /* ABOUT */
     
     .section--about img{
-        min-width: 18.0rem;
+        min-width: 15.0rem;
     }
     
     /* CONTACT */
