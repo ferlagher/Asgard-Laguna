@@ -13,6 +13,10 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: #202529;
+    background-image: url(./images/bkgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-areas: 
         "header"
@@ -602,7 +606,7 @@ transform: scale(1.1);
         padding: 0 4.4rem 0 4.4rem;
     }
     header nav{
-        gap: 8.6rem;
+        gap: 8%;
     }
     header nav picture a svg{
         height: 3.2rem;
