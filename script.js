@@ -20,4 +20,8 @@ observerright.observe(document.querySelector('.nav2'));
 
 observerleft.observe(document.querySelector('.nav3'));
 
+<<<<<<< HEAD
 observerright.observe(document.querySelector('.nav4'));
+=======
+observerright.observe(document.querySelector('.nav4'));
+>>>>>>> javascript
