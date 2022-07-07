@@ -396,17 +396,11 @@ footer ul li{
         transform: translateX(-20%);
         opacity: 0;
     }
-    100%{
-        opacity: 1;
-    }
 }
 @keyframes fromright{
     0% {
         transform: translateX(20%);
         opacity: 0;
-    }
-    100%{
-        opacity: 1;
     }
 }
 
@@ -469,6 +463,14 @@ footer ul li{
 }
 .section--gallery picture a img:hover{
     transform: scale(1.05);
+}
+.fadein{
+    animation: fadein 0.5s ease-in-out;
+}
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
 }
 
 /* PROYECTS */
