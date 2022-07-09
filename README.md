@@ -7,6 +7,6 @@ This is my project for my web developer career in Coderhouse.
 - CSS3
 - A bit of JavaScript
 
-This site is not finished yet.
+[This site](https://ferlagher.github.io/Asgard-Laguna/) is not finished yet.
 
 ***Asgard Esculturas*** is an uruguayan metalurgic business specialized in iron sculptures.
