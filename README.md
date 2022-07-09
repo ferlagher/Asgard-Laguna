@@ -9,4 +9,4 @@ This is my project for my web developer career in Coderhouse.
 
 This site is not finished yet.
 
-*Asgard Esculturas* is an uruguayan metalurgic business specialized in iron sculptures.
+***Asgard Esculturas*** is an uruguayan metalurgic business specialized in iron sculptures.
