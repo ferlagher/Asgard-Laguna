@@ -2,7 +2,7 @@
 
 This is my project for my web developer career in Coderhouse.
 
-## Technologies used:
+## Technologies used
 - HTML5
 - CSS3
 - A bit of JavaScript
