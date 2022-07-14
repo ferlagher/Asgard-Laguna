@@ -113,9 +113,12 @@ span {
 }
 
 svg {
+    fill: var(--color-secondary);
+}
+
+main svg, footer svg {
     height: var(--font-size-m);
     width: var(--font-size-m);
-    fill: var(--color-secondary);
 }
 
 svg:hover {
@@ -124,63 +127,15 @@ svg:hover {
 
 /* HEADER */
 
+/* BOOTSTRAP */
+
 header {
-    grid-area: header;
-    height: 100%;
-    width: 100%;
     background-color: var(--color-main);
-    border-bottom: 1px solid var(--color-secondary);
-    padding: 0 10% 0 10%;
+    border-bottom: 1px solid var(--color-secondary) ;
 }
 
-header nav {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav picture {
-    height: var(--font-size-l);
-}
-
-header nav picture a svg {
-    width: 100%;
-    height: 100%;
-    fill: var(--color-secondary);
-}
-
-header nav picture a svg:hover {
-    fill: var(--color-accent);
-}
-
-header nav ul {
-    height: 100%;
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul li {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header nav ul li a span {
-    padding: 1.0rem;
-    white-space: nowrap;
-}
-
-header nav ul li a span:hover {
+header a span:hover {
     color: var(--color-accent);
-}
-
-header nav ul li a svg {
-    display: none;
 }
 
 /* MAIN */
@@ -192,11 +147,11 @@ main {
     align-items: center;
 }
 
-section {
+/* section {
     width: 100%;
-/*     height: 100%; */
-    padding: 0 10% 7.0rem 10%;
-}
+    height: 100%;
+    padding-bottom: 7.0rem;
+} */
 
 section ul {
     display: flex;
@@ -270,8 +225,8 @@ input {
 }
 
 input:-webkit-autofill{
-  box-shadow: 0 0 0 10rem var(--color-form) inset;
-  -webkit-text-fill-color: var(--color-text);
+    box-shadow: 0 0 0 10rem var(--color-form) inset;
+    -webkit-text-fill-color: var(--color-text);
 }
 
 textarea {
@@ -352,10 +307,6 @@ footer {
     grid-area: footer;
     background-color: var(--color-main);
     border-top: 1px solid var(--color-secondary);
-    padding: 0 10% 0 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer span {
@@ -376,7 +327,7 @@ footer ul li {
 
 /* HEADER */
 
-.li--active {
+/* .li--active {
     background: linear-gradient(rgba(26, 30, 34, 1) 0%, rgba(26, 30, 34, 0.15) 100%);
     height: 100%;
 }
@@ -388,7 +339,7 @@ footer ul li {
 .li--active svg {
     fill: var(--color-accent);
 }
-
+ */
 /* INDEX */
 
 .hero {
@@ -732,36 +683,11 @@ footer ul li {
 
     /* HEADER */
 
-    header {
-        padding: 0 4.4rem 0 4.4rem;
+    a span{
+        font-size: var(--font-size-m);
+        color: var(--color-accent);
     }
 
-    header nav {
-        gap: 8%;
-    }
-
-    header nav picture a svg {
-        height: var(--font-size-l);
-    }
-
-    header nav ul {
-        flex-grow: 1;
-    }
-
-    header nav ul li a span {
-        display: none;
-    }
-
-    header nav ul li a svg {
-        width: var(--font-size-l);
-        height: var(--font-size-l);
-        display: inline-block;
-    }
-
-    /* MAIN */
-
-    section {
-        padding: 0 2.0rem 6.0rem 2.0rem;
     }
 
     /* INDEX */
@@ -824,55 +750,16 @@ footer ul li {
         flex-wrap: nowrap;
         width: 30%;
     }
-
-    /* FOOTER */
-
-    footer {
-        padding: 0 4.4rem 0 4.4rem;
-    }
-
-    footer span {
-        font-size: var(--font-size-xxs);
-    }
 }
 
 /* MOBILE */
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     body {
         grid-template-rows: 4.8rem auto 4.8rem;
     }
 
-    /* HEADER */
-
-    header {
-        padding: 0 2.2rem 0 2.2rem;
-    }
-
-    header nav {
-        gap: 4.2rem;
-    }
-
-    header nav picture a svg {
-        height: 2.2rem;
-    }
-
-    header nav ul li a svg {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-
     /* MAIN */
-
-    section {
-        padding: 0 1.0rem var(--font-size-xl) 1.0rem;
-    }
-
-    /* INDEX */
-
-    .section--hero {
-        background-position-x: 35%;
-    }
 
     /* GALLERY */
 
@@ -899,11 +786,5 @@ footer ul li {
 
     .div--grow1 div {
         width: auto;
-    }
-
-    /* FOOTER */
-
-    footer {
-        padding: 0 2.2rem 0 2.2rem;
     }
 }
