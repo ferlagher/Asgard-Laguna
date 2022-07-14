@@ -1,6 +1,6 @@
 # Mi first web project
 
-This is my project for my web developer career in Coderhouse.
+This is my project for my web developer course in Coderhouse.
 
 ## Technologies used
 - HTML5
