@@ -391,53 +391,11 @@ footer ul li {
 
 /* INDEX */
 
-.section--hero {
-    background-image: url(./images/hero.jpg);
-    background-size: cover;
-    background-position: top right;
-    background-attachment: fixed;
-    box-shadow: inset 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3), inset 0rem -0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid var(--color-secondary);
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
+.hero {
+    max-height: 90vh;
 }
 
-.section--hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(32, 37, 41, 0) 40%, rgba(32, 37, 41, 1) 100%);
-    opacity: 0.3;
-}
-
-/* BOOTSRTAP */
-
-.custom-text {
-    font-family: var(--font-main);
-    font-size: var(--font-size-l);
-    font-weight: 300;
-    color: var(--color-text);
-    text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 1);
-}
-
-/* BOOTSTRAP */
-
-.white-title {
-    font-family: var(--font-main);
-    font-size: var(--font-size-l);
-    font-weight: 300;
-    color: var(--color-text);
-    text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 1);
-}
-
-/* .section--nav {
+.section--nav {
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -503,7 +461,7 @@ footer ul li {
     background-image: url(./images/nav4.jpg);
     min-width: 30.0rem;
     flex-grow: 1;
-} */
+}
 
 .fromleft {
     animation: fromleft 1s ease-in-out;
