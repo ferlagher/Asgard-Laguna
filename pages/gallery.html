@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <!-- 👇🏻 BOOTSTRAP 5.2 👇🏻 -->
+    <!-- 🡳 NAVBAR (BOOTSTRAP 5.2) 🡳 -->
     <header class="navbar navbar-expand-md navbar-dark">
         <nav class="container-md">
             <a class="navbar-brand m-0 p-0" href="../index.html">
@@ -66,57 +68,179 @@
             </div>
         </nav>
     </header>
-    <!-- ☝🏻 BOOTSTRAP 5.2 ☝🏻 -->
+    <!-- 🡱 NAVBAR 🡱 -->
     <main>
         <h3>Descubre una colección de esculturas únicas</h3>
-        <section class="container-md pb-5 section--gallery">
-            <picture class="img1">
-                <a href="../images/armor-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/armor.jpg" alt="Guerrero">
-                </a>
-            </picture>
-            <picture class="img2">
-                <a href="../images/horse-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/horse.jpg" alt="Caballo">
-                </a>
-            </picture>
-            <picture class="img3">
-                <a href="../images/falcon-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/falcon.jpg" alt="Halcón">
-                </a>
-            </picture>
-            <picture class="img4">
-                <a href="../images/surfer-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/surfer.jpg" alt="Surfista">
-                </a>
-            </picture>
-            <picture  class="img5">
-                <a href="../images/frame-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/frame.jpg" alt="Marco">
-                </a>
-            </picture>
-            <picture class="img6">
-                <a href="../images/geode-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/geode.jpg" alt="Geoda">
-                </a>
-            </picture>
-            <picture class="img7">
-                <a href="../images/dragon-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/dragon.jpg" alt="Dragón">
-                </a>
-            </picture>
-            <picture class="img8">
-                <a href="../images/reaper-full.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/reaper.jpg" alt="Parca">
-                </a>
-            </picture>
-            <picture class="img9">
-                <a href="../images/fish-full.png" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/fish.jpg" alt="Pez">
-                </a>
-            </picture>
+        <!-- 🡳 GALLERY (BOOTSTRAP 5.2) 🡳 -->
+        <section class="container-md pb-5">
+            <div class="row row-cols-3" data-masonry="{&quot;percentPosition&quot;: true }">
+                <!-- 🡳 IMAGE 1 🡳 -->
+                <div class="col mb-4 cursor-pointer img1">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#armor">
+                        <img class="card-img gallery-img" src="../images/armor.jpg" alt="Armadura">
+                    </div>
+                    <div class="modal fade" id="armor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/armor-full.jpg" alt="Armadura">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 2 🡳 -->
+                <div class="col mb-4 cursor-pointer img2">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#horse">
+                        <img class="card-img gallery-img" src="../images/horse.jpg" alt="Caballo">
+                    </div>
+                    <div class="modal fade" id="horse" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/horse-full.jpg" alt="Caballo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 3 🡳 -->
+                <div class="col mb-4 cursor-pointer img3">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#falcon">
+                        <img class="card-img gallery-img" src="../images/falcon.jpg" alt="Halcón">
+                    </div>
+                    <div class="modal fade" id="falcon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/falcon-full.jpg" alt="Halcón">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 4 🡳 -->
+                <div class="col mb-4 cursor-pointer img4">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#surfer">
+                        <img class="card-img gallery-img" src="../images/surfer.jpg" alt="Surfista">
+                    </div>
+                    <div class="modal fade" id="surfer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/surfer-full.jpg" alt="Surfista">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 5 🡳 -->
+                <div class="col mb-4 cursor-pointer img5">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#dragon">
+                        <img class="card-img gallery-img" src="../images/dragon.jpg" alt="Dragón">
+                    </div>
+                    <div class="modal fade" id="dragon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/dragon-full.jpg" alt="Dragón">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 6 🡳 -->
+                <div class="col mb-4 cursor-pointer img6">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#reaper">
+                        <img class="card-img gallery-img" src="../images/reaper.jpg" alt="Parca">
+                    </div>
+                    <div class="modal fade" id="reaper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/reaper-full.jpg" alt="Parca">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 7 🡳 -->
+                <div class="col mb-4 cursor-pointer img7">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#geode">
+                        <img class="card-img gallery-img" src="../images/geode.jpg" alt="Geoda">
+                    </div>
+                    <div class="modal fade" id="geode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/geode-full.jpg" alt="Geoda">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 8 🡳 -->
+                <div class="col mb-4 cursor-pointer img8">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#frame">
+                        <img class="card-img gallery-img" src="../images/frame.jpg" alt="Marco">
+                    </div>
+                    <div class="modal fade" id="frame" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/frame-full.jpg" alt="Marco">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 🡳 IMAGE 9 🡳 -->
+                <div class="col mb-4 cursor-pointer img9">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#fish">
+                        <img class="card-img gallery-img" src="../images/fish.jpg" alt="Pez">
+                    </div>
+                    <div class="modal fade" id="fish" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-dark d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mh-100 shadow" src="../images/fish-full.png" alt="Pez">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- 🡱 GALLERY 🡱 -->
     </main>
+    <!-- 🡳 FOOTER 🡳 -->
     <footer class="d-flex justify-content-center align-items-center">
         <div class="container-md d-flex justify-content-between align-items-center">
             <span>Proyecto web de Fernanda Laguna Hermida</span>
@@ -164,7 +288,12 @@
             </ul>
         </div>
     </footer>
-    <script src="../js/gallery.js"></script>
+    <!-- 🡱 FOOTER 🡱 -->
+    <!-- 🡳 SCRIPTS 🡳 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="../js/gallery.js"></script>
+    <!-- 🡱 SCRIPTS 🡱 -->
 </body>
+
 </html>

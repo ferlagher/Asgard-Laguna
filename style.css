@@ -125,8 +125,6 @@ svg:hover {
     fill: var(--color-accent);
 }
 
-/* HEADER */
-
 /* BOOTSTRAP */
 
 header {
@@ -136,6 +134,15 @@ header {
 
 header a span:hover {
     color: var(--color-accent);
+}
+
+.gallery-img{
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    opacity: 1;
 }
 
 /* MAIN */
@@ -181,12 +188,12 @@ section ul li a:hover svg {
     fill: var(--color-accent);
 }
 
-img {
+/* img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 0.4rem;
-}
+} */
 
 form {
     width: 100%;
@@ -325,21 +332,6 @@ footer ul li {
     display: inline-block;
 }
 
-/* HEADER */
-
-/* .li--active {
-    background: linear-gradient(rgba(26, 30, 34, 1) 0%, rgba(26, 30, 34, 0.15) 100%);
-    height: 100%;
-}
-
-.li--active span {
-    color: var(--color-accent);
-}
-
-.li--active svg {
-    fill: var(--color-accent);
-}
- */
 /* INDEX */
 
 .hero {
@@ -436,78 +428,8 @@ footer ul li {
     }
 }
 
-/* GALLERY */
-
-.section--gallery {
-    display: grid;
-    gap: 4rem;
-    grid-template-areas:
-        "img1 img2 img2"
-        "img1 img3 img4"
-        "img5 img7 img4"
-        "img8 img7 img6"
-        "img8 img9 img9";
-    justify-items: center;
-    align-items: center;
-}
-
-.img1 {
-    grid-area: img1;
-}
-
-.img2 {
-    grid-area: img2;
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img4 {
-    grid-area: img4;
-}
-
-.img5 {
-    grid-area: img5;
-}
-
-.img6 {
-    grid-area: img6;
-}
-
-.img7 {
-    grid-area: img7;
-}
-
-.img8 {
-    grid-area: img8;
-}
-
-.img9 {
-    grid-area: img9;
-}
-
-.section--gallery picture {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    opacity: 0.5;
-    border-radius: 0.4rem;
-    background-color: var(--color-secondary);
-    box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
-    transition: 0.5s ease-in-out;
-}
-
-.section--gallery picture:hover {
-    opacity: 1;
-}
-
-.section--gallery picture a img {
-    transition: 0.5s ease-in-out;
-}
-
-.section--gallery picture a img:hover {
-    transform: scale(1.05);
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .fadein {
@@ -647,6 +569,7 @@ footer ul li {
 /* TABLET */
 
 @media (max-width: 768px) {
+
     a:link {
         font-size: var(--font-size-xs);
     }
@@ -688,8 +611,6 @@ footer ul li {
         color: var(--color-accent);
     }
 
-    }
-
     /* INDEX */
 
     .section--hero {
@@ -707,16 +628,6 @@ footer ul li {
 
     .div--nav a span {
         font-size: 2.2rem;
-    }
-
-    /* GALLERY */
-
-    .section--gallery {
-        gap: 2.0rem;
-    }
-
-    .section--gallery picture {
-        opacity: 1;
     }
 
     /* PROJECTS */
@@ -750,21 +661,13 @@ footer ul li {
         flex-wrap: nowrap;
         width: 30%;
     }
-}
 
+}
 /* MOBILE */
 
 @media (max-width: 576px) {
     body {
         grid-template-rows: 4.8rem auto 4.8rem;
-    }
-
-    /* MAIN */
-
-    /* GALLERY */
-
-    .section--gallery {
-        gap: 1.0rem;
     }
 
     /* ABOUT */
