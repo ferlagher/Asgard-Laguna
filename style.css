@@ -93,7 +93,7 @@ h5 {
     font-family: var(--font-main);
     font-weight: 400;
     font-size: var(--font-size-xs);
-    color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
 p {
@@ -127,6 +127,20 @@ svg:hover {
 
 /* BOOTSTRAP */
 
+a.btn {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+a.btn:hover {
+    background-color: #bd6b31;
+    border-color: #bd6b31;
+}
+
+a.btn span {
+    color: var(--color-text);
+}
+
 header {
     background-color: var(--color-main);
     border-bottom: 1px solid var(--color-secondary) ;
@@ -153,12 +167,6 @@ main {
     flex-direction: column;
     align-items: center;
 }
-
-/* section {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 7.0rem;
-} */
 
 section ul {
     display: flex;
@@ -187,13 +195,6 @@ section ul li svg {
 section ul li a:hover svg {
     fill: var(--color-accent);
 }
-
-/* img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 0.4rem;
-} */
 
 form {
     width: 100%;
@@ -444,87 +445,13 @@ footer ul li {
 
 /* PROYECTS */
 
-.section--projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.section--projects a {
-    width: 40%;
-    min-width: 30.0rem;
-    flex-grow: 1;
-}
-
-.div--project {
-    width: 100%;
-    height: 25vw;
-    min-height: 250px;
-    background-color: rgba(0, 0, 0);
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.4rem;
-    box-shadow: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
-}
-
-.div--project:hover .project--title {
-    transform: translateY(100%);
-}
-
-.div--project:hover .project {
-    opacity: 1;
-}
-
-.project--title {
-    background-color: rgba(32, 37, 41, 0.5);
-    backdrop-filter: blur(0.5rem);
-    width: 100%;
-    height: 35%;
-    position: absolute;
-    bottom: 0%;
-    padding: 1.0rem;
-    border-top: 0.1rem solid var(--color-secondary);
-    box-shadow: 0rem -0.1rem 0.5rem rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease-in;
-}
-
 .project {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0.8;
-    transition: 0.5s ease-in-out;
+    opacity: 0.75;
+    transition: 0.3s ease-in-out;
 }
 
-.project1 {
-    background-image: url(./images/mill.jpg);
-}
-
-.project2 {
-    background-image: url(./images/park.jpg);
-}
-
-.project3 {
-    background-image: url(./images/dragons.jpg);
-}
-
-.project4 {
-    background-image: url(./images/grapes.jpg);
-}
-
-/* ABOUT */
-
-.section--about img {
-    float: left;
-    width: 25%;
-    height: auto;
-    min-width: 20.0rem;
-    margin-right: var(--font-size-xl);
+.card:hover .project{
+    opacity: 1;
 }
 
 /* CONTACT */
@@ -611,12 +538,11 @@ footer ul li {
         color: var(--color-accent);
     }
 
-    /* INDEX */
-
-    .section--hero {
-        background-position: center;
-        height: 60vh;
+    a.btn span {
+        font-size: var(--font-size-xxs);
     }
+
+    /* INDEX */
 
     .section--nav {
         gap: 2.0rem;
@@ -630,24 +556,16 @@ footer ul li {
         font-size: 2.2rem;
     }
 
-    /* PROJECTS */
+    /* GALLERY */
 
-    .section--projects {
-        gap: 2.0rem;
-    }
-
-    .project {
+    .gallery-img{
         opacity: 1;
     }
 
-    /* ABOUT */
+    /* PROJECTS */
 
-    .section--about {
-        gap: 2.0rem;
-    }
-
-    .section--about img {
-        margin-right: 1.0rem;
+    .project {
+        opacity: 1;
     }
 
     /* CONTACT */
@@ -661,19 +579,13 @@ footer ul li {
         flex-wrap: nowrap;
         width: 30%;
     }
-
 }
 /* MOBILE */
 
 @media (max-width: 576px) {
+
     body {
         grid-template-rows: 4.8rem auto 4.8rem;
-    }
-
-    /* ABOUT */
-
-    .section--about img {
-        min-width: 15.0rem;
     }
 
     /* CONTACT */
