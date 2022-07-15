@@ -142,32 +142,32 @@ a.btn span {
     color: var(--color-text);
 }
 
-.custom--button {
+.custom-button {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
     display: flex;
     align-items: center;
 }
 
-.custom--button span {
+.custom-button span {
     color: var(--color-text);
 }
 
-.custom--button:hover, .custom--button:active, .custom--button:focus {
+.custom-button:hover, .custom-button:active, .custom-button:focus {
     background-color: #bd6b31;
     border-color: #bd6b31;
 }
 
-.animated--button {
+.animated-button {
     width: fit-content;
 }
 
-.animated--button span {
+.animated-button span {
     transform: translateX(12%);
     transition: 0.2s ease-in-out;
 }
 
-.animated--button div {
+.animated-button div {
     height: 1.0rem;
     width: 1.0rem;
     border-top: var(--color-text) 2px solid;
@@ -177,20 +177,20 @@ a.btn span {
     transition: 0.2s ease-in-out;
 }
 
-.animated--button:hover span {
+.animated-button:hover span {
     transform: translateX(0);
 }
 
-.animated--button:hover div {
+.animated-button:hover div {
     transform: rotate(45deg) translate(0);
     opacity: 1;
 }
 
-.animated--button:active span {
+.animated-button:active span {
     transform: translateX(12%);
 }
 
-.animated--button:active div {
+.animated-button:active div {
     transform: rotate(45deg) translate(150%, -150%);
     opacity: 0;
 }
@@ -270,7 +270,7 @@ footer ul li {
     max-height: 90vh;
 }
 
-.section--nav {
+.section-nav {
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -278,7 +278,7 @@ footer ul li {
     gap: 4rem;
 }
 
-.section--nav div {
+.section-nav div {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,7 +290,7 @@ footer ul li {
     align-items: center;
 }
 
-.section--nav div a {
+.section-nav div a {
     position: relative;
     width: 100%;
     height: 100%;
@@ -298,11 +298,11 @@ footer ul li {
     transition: 0.5s ease-in-out;
 }
 
-.section--nav div a:hover {
+.section-nav div a:hover {
     background-color: rgba(32, 37, 41, 0.2);
 }
 
-.section--nav div a span {
+.section-nav div a span {
     font-family: var(--font-main);
     font-size: var(--font-size-l);
     font-weight: 300;
@@ -405,9 +405,8 @@ footer ul li {
 
 /* 🡳 CONTACT 🡳 */
 
-.h4--white {
-    color: var(--color-text);
-    white-space: nowrap;
+ul {
+    list-style: none;
 }
 
 form {
@@ -478,6 +477,11 @@ input:focus, textarea:focus {
     outline: var(--color-accent) 2px solid;
 }
 
+.h4-white {
+    color: var(--color-text);
+    white-space: nowrap;
+}
+
 /* 🡱 PROJECTS 🡱 */
 
 /* 🡳 MEDIA QUERY 🡳 */
@@ -529,15 +533,15 @@ input:focus, textarea:focus {
 
     /* 🡳 INDEX 🡳 */
 
-    .section--nav {
+    .section-nav {
         gap: 2.0rem;
     }
 
-    .section--nav div {
+    .section-nav div {
         height: 20.0rem;
     }
 
-    .section--nav div a span {
+    .section-nav div a span {
         font-size: 2.2rem;
     }
 
