@@ -7,8 +7,8 @@ $color-accent: #A4571F;
 $color-hover: #BD6B31;
 $color-form: #191E22;
 
-$font-main: 'Roboto', sans-serif;
-$font-secondary: 'Roboto Condensed', sans-serif;
+$font-family-main: 'Roboto', sans-serif;
+$font-family-secondary: 'Roboto Condensed', sans-serif;
 
 $font-size-xxs: calc(14rem / 16);
 $font-size-xs: calc(16rem / 16);
@@ -33,9 +33,7 @@ $gap-nav: calc(40rem /16);
 $border-radius: 5px;
 
 h1 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-xxl;
+    font: $font-family-secondary, $font-weight-bold, $font-size-xxl;
     color: $color-text;
     text-shadow: $shadow-text;
     z-index: 1;
@@ -43,56 +41,42 @@ h1 {
 }
 
 h2 {
-    font-family: $font-main;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-xl;
+    font: $font-family-main, $font-weight-regular, $font-size-xl;
     color: $color-accent;
     z-index: 1;
 }
 
 h3 {
-    font-family: $font-main;
-    font-weight: $font-weight-thin;
-    font-size: $font-size-l;
+    font: $font-family-main, $font-weight-thin, $font-size-l;
     color: $color-text;
     margin: 2.25em 10% 2.25em 10%;
 }
 
 h4 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-m;
+    font: $font-family-secondary, $font-weight-regular, $font-size-m;
     color: $color-text;
 }
 
 h5 {
-    font-family: $font-main;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-xs;
+    font: $font-family-main, $font-weight-regular, $font-size-xs;
     color: $color-secondary;
 }
 
 p {
-    font-family: $font-main;
-    font-weight: $font-weight-thin;
-    font-size: $font-size-s;
+    font: $font-family-main, $font-weight-thin, $font-size-s;
     color: $color-text;
     line-height: 1.5;
     margin-bottom: 1.1em;
 }
 
 span {
-    font-family: $font-secondary;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-s;
+    font: $font-family-secondary, $font-weight-regular, $font-size-s;
     color: $color-secondary;
 }
 
 a {
     &:link {
-        font-family: $font-secondary;
-        font-size: $font-size-s;
-        font-weight: $font-weight-regular;
+        font: $font-family-secondary, $font-weight-regular, $font-size-s;
         color: $color-accent;
         text-decoration: none;
         line-height: 1.5;
@@ -224,9 +208,7 @@ section {
                     background-color: rgba(32, 37, 41, 0.2);
                 }
                 span {
-                    font-family: $font-main;
-                    font-size: $font-size-l;
-                    font-weight: $font-weight-light;
+                    font: $font-family-main, $font-weight-light, $font-size-l;
                     color: $color-text;
                     text-shadow: $shadow-text;
                     position: absolute;
@@ -291,15 +273,14 @@ form{
     justify-content: space-between;
     div {
         position: relative;
-        font-weight: $font-weight-light;
-        font-size: $font-size-xs;
+        font: $font-family-main, $font-weight-light, $font-size-xs;
         label {
             position: absolute;
             top: 0;
             left: 0;
             padding: 0.625em;
             color: $color-accent;
-            font-family: $font-secondary;
+            font-family: $font-family-secondary;
             transition: 0.2s ease;
         }
         input {
@@ -307,7 +288,6 @@ form{
             border: $color-secondary 1px solid;
             border-radius: $border-radius;
             resize: none;
-            font-family: $font-main;
             color: $color-text;
             padding: 0.625em;
             background-color: $color-form;
@@ -333,7 +313,6 @@ form{
             border: $color-secondary 1px solid;
             border-radius: $border-radius;
             resize: none;
-            font-family: $font-main;
             color: $color-text;
             padding: 0.625em;
             background-color: $color-form;
