@@ -39,24 +39,6 @@ $border-radius: 5px;
 }
 
 h1 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-xxl;
-    color: $color-text;
-    text-shadow: $shadow-text;
-    z-index: 1;
-    white-space: nowrap;
-}
-
-h2 {
-    font-family: $font-main;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-xl;
-    color: $color-accent;
-    z-index: 1;
-}
-
-h3 {
     font-family: $font-main;
     font-weight: $font-weight-thin;
     font-size: $font-size-l;
@@ -64,18 +46,11 @@ h3 {
     margin: 2.25em 10% 2.25em 10%;
 }
 
-h4 {
+h2 {
     font-family: $font-secondary;
     font-weight: $font-weight-regular;
     font-size: $font-size-m;
     color: $color-text;
-}
-
-h5 {
-    font-family: $font-main;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-xs;
-    color: $color-secondary;
 }
 
 p {
@@ -109,17 +84,6 @@ a {
     }
     &:hover {
         color: $color-hover;
-    }
-    .btn {
-        background-color: $color-accent;
-        border-color: $color-accent;
-        &:hover {
-            background-color: $color-hover;
-            border-color: $color-hover;
-        }
-        span {
-            color: $color-text;
-        }
     }
 }
 
@@ -203,6 +167,23 @@ section {
     }
     &.hero {
         max-height: 90vh;
+        div {
+            h2 {
+                font-family: $font-secondary;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-xxl;
+                text-shadow: $shadow-text;
+                z-index: 1;
+                white-space: nowrap;
+            }
+            h3 {
+                font-family: $font-main;
+                font-weight: $font-weight-regular;
+                font-size: $font-size-xl;
+                color: $color-accent;
+                z-index: 1;
+            }
+        }
     }
     &.section-nav {
         height: auto;
@@ -397,11 +378,6 @@ form{
             opacity: 0;
         }
     }
-}
-
-.h4-white {
-    color: $color-text;
-    white-space: nowrap;
 }
 
 .cursor-pointer {
