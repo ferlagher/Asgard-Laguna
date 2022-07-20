@@ -5,6 +5,7 @@ This is my project for my web developer course in Coderhouse.
 ## Technologies used
 - HTML5
 - CSS3
+  - SASS ♥
   - Bootstrap
 - A bit of JavaScript
 
