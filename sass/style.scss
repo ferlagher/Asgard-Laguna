@@ -246,7 +246,7 @@ section {
                     @include index-nav(url(../images/nav1.jpg), min(17rem, 100%), 1);
                 }
                 &2 {
-                    @include index-nav(url(../images/nav4.jpg), 50%, 2);
+                    @include index-nav(url(../images/nav2.jpg), 50%, 2);
                 }
                 &3 {
                     @include index-nav(url(../images/nav3.jpg), 50%, 2);
