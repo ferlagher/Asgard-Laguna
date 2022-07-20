@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
 h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
+  font: 4rem "Roboto Condensed", sans-serif 700;
   color: #F3F5F8;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   z-index: 1;
@@ -10,55 +8,41 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
+  font: "Roboto", sans-serif, 400, 2.5rem;
   color: #A4571F;
   z-index: 1;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
+  font: "Roboto", sans-serif, 100, 2rem;
   color: #F3F5F8;
   margin: 2.25em 10% 2.25em 10%;
 }
 
 h4 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font: "Roboto Condensed", sans-serif, 400, 1.5rem;
   color: #F3F5F8;
 }
 
 h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+  font: "Roboto", sans-serif, 400, 1rem;
   color: #4C555C;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1.125rem;
+  font: "Roboto", sans-serif, 100, 1.125rem;
   color: #F3F5F8;
   line-height: 1.5;
   margin-bottom: 1.1em;
 }
 
 span {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
+  font: "Roboto Condensed", sans-serif, 400, 1.125rem;
   color: #4C555C;
 }
 
 a:link {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font: "Roboto Condensed", sans-serif, 400, 1.125rem;
   color: #A4571F;
   text-decoration: none;
   line-height: 1.5;
@@ -188,9 +172,7 @@ section.section-nav div a:hover {
   background-color: rgba(32, 37, 41, 0.2);
 }
 section.section-nav div a span {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
+  font: "Roboto", sans-serif, 300, 2rem;
   color: #F3F5F8;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   position: absolute;
@@ -204,7 +186,7 @@ section.section-nav div.nav1 {
   flex-grow: 1;
 }
 section.section-nav div.nav2 {
-  background-image: url(../images/nav2.jpg);
+  background-image: url(../images/nav4.jpg);
   min-width: 50%;
   flex-grow: 2;
 }
@@ -248,8 +230,7 @@ form {
 }
 form div {
   position: relative;
-  font-weight: 300;
-  font-size: 1rem;
+  font: "Roboto", sans-serif, 300, 1rem;
 }
 form div label {
   position: absolute;
@@ -265,7 +246,6 @@ form div input {
   border: #4C555C 1px solid;
   border-radius: 5px;
   resize: none;
-  font-family: "Roboto", sans-serif;
   color: #F3F5F8;
   padding: 0.625em;
   background-color: #191E22;
@@ -299,7 +279,6 @@ form div textarea {
   border: #4C555C 1px solid;
   border-radius: 5px;
   resize: none;
-  font-family: "Roboto", sans-serif;
   color: #F3F5F8;
   padding: 0.625em;
   background-color: #191E22;

@@ -32,8 +32,14 @@ $gap-nav: calc(40rem /16);
 
 $border-radius: 5px;
 
+@mixin index-nav($bkgd, $min-w, $grow) {
+    background-image: $bkgd;
+    min-width: $min-w;
+    flex-grow: $grow;
+}
+
 h1 {
-    font: $font-family-secondary, $font-weight-bold, $font-size-xxl;
+    font: $font-size-xxl $font-family-secondary $font-weight-bold;
     color: $color-text;
     text-shadow: $shadow-text;
     z-index: 1;
@@ -219,24 +225,16 @@ section {
             }
             &.nav{
                 &1 {
-                    background-image: url(../images/nav1.jpg);
-                    min-width: min(17rem, 100%);
-                    flex-grow: 1;
+                    @include index-nav(url(../images/nav1.jpg), min(17rem, 100%), 1);
                 }
                 &2 {
-                    background-image: url(../images/nav2.jpg);
-                    min-width: 50%;
-                    flex-grow: 2;
+                    @include index-nav(url(../images/nav4.jpg), 50%, 2);
                 }
                 &3 {
-                    background-image: url(../images/nav3.jpg);
-                    min-width: 50%;
-                    flex-grow: 2;
+                    @include index-nav(url(../images/nav3.jpg), 50%, 2);
                 }
                 &4 {
-                    background-image: url(../images/nav4.jpg);
-                    min-width: min(17rem, 100%);
-                    flex-grow: 1;
+                    @include index-nav(url(../images/nav4.jpg), min(17rem, 100%), 1);
                 }
             }
         }
