@@ -470,9 +470,6 @@ form div textarea:focus + label, form div textarea:not(:placeholder-shown) + lab
   section.section-nav {
     gap: 1.25rem;
   }
-  section.section-nav div {
-    /* height: 12rem; */
-  }
   section.section-nav div a span {
     font-size: 1.5rem;
   }
