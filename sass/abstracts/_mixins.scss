@@ -1,0 +1,5 @@
+@mixin index-nav($bkgd, $min-w, $grow) {
+    background-image: $bkgd;
+    min-width: $min-w;
+    flex-grow: $grow;
+}

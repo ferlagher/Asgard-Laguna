@@ -1,0 +1,22 @@
+footer {
+    grid-area: footer;
+    background-color: $color-main;
+    border-top: 1px solid $color-secondary;
+    span {
+        font-size: $font-size-xs;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $gap;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        span {
+            font-size: $font-size-xxs;
+        }
+    }
+}

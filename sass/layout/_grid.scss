@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $color-main;
+    background-image: url(../images/bkgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: $font-size-xxl auto $font-size-xxl;
+    grid-template-columns: auto;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

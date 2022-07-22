@@ -1,0 +1,88 @@
+.section-nav {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: $gap-nav;
+    div {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: $border-radius;
+        height: min(17rem, 40vw);
+        box-shadow: $shadow-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(32, 37, 41, 0.5);
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: rgba(32, 37, 41, 0.2);
+            }
+            span {
+                font-family: $font-main;
+                font-size: $font-size-l;
+                font-weight: $font-weight-light;
+                color: $color-text;
+                text-shadow: $shadow-text;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        }
+        &.nav{
+            &1 {
+                @include index-nav(url(../images/nav1.jpg), min(17rem, 100%), 1);
+            }
+            &2 {
+                @include index-nav(url(../images/nav2.jpg), 50%, 2);
+            }
+            &3 {
+                @include index-nav(url(../images/nav3.jpg), 50%, 2);
+            }
+            &4 {
+                @include index-nav(url(../images/nav4.jpg), min(17rem, 100%), 1);
+            }
+        }
+    }
+}
+
+.fromleft {
+    animation: fromleft 1s ease-in-out;
+}
+
+.fromright {
+    animation: fromright 1s ease-in-out;
+}
+
+@keyframes fromleft {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+}
+
+@keyframes fromright {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section.section-nav{
+        gap: $gap;
+        div {
+            a {
+                span {
+                    font-size: $font-size-m;
+                }
+            }
+        }
+    }
+}

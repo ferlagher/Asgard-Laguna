@@ -1,0 +1,31 @@
+$color-main: #202529;
+$color-secondary: #4C555C;
+$color-text: #F3F5F8;
+$color-accent: #A4571F;
+$color-hover: #BD6B31;
+$color-form: #191E22;
+
+$font-main: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Condensed', sans-serif;
+
+$font-size-xxs: calc(14rem / 16);
+$font-size-xs: calc(16rem / 16);
+$font-size-s: calc(18rem / 16);
+$font-size-m: calc(24rem / 16);
+$font-size-l: calc(32rem / 16);
+$font-size-xl: calc(40rem / 16);
+$font-size-xxl: calc(64rem / 16);
+
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 100;
+
+$shadow-text:  0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
+$shadow-box: -0.5rem -0.5rem 2.0rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2.0rem rgba(0, 0, 0, 0.2);
+$shadow-input: inset 0.3rem 0.3rem 0.3rem rgba(15, 15, 15, 0.2), inset -0.3rem -0.3rem 0.3rem rgba(57, 57, 57, 0.2);
+
+$gap: calc(20rem /16);
+$gap-nav: calc(40rem /16);
+
+$border-radius: 5px;

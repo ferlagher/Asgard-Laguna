@@ -1,0 +1,48 @@
+.custom-button {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    display: flex;
+    align-items: center;
+    span {
+        color: $color-text;
+    }
+    &:hover, &:active, &:focus {
+        background-color: $color-hover;
+        border-color: $color-hover;
+    }
+}
+
+.animated-button {
+    width: fit-content;
+    span {
+        transform: translateX(12%);
+        transition: 0.2s ease-in-out;
+    }
+    div {
+        height: 0.625rem;
+        width: 0.625rem;
+        border-top: $color-text 2px solid;
+        border-right: $color-text 2px solid;
+        transform: rotate(45deg) translate(-100%, 100%);
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+    }
+    &:hover {
+        span {
+            transform: translateX(0);
+        }
+        div {
+            transform: rotate(45deg) translate(0);
+            opacity: 1;
+        }
+    }
+    &:active {
+        span {
+            transform: translateX(12%);
+        }
+        div {
+            transform: rotate(45deg) translate(150%, -150%);
+            opacity: 0;
+        }
+    }
+}

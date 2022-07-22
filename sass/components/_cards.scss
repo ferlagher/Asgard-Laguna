@@ -1,0 +1,18 @@
+.card{
+    box-shadow: $shadow-box;
+    .project {
+    opacity: 0.75;
+    transition: 0.3s ease-in-out;
+    }
+    &:hover {
+        .project{
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        opacity: 1;
+    }
+}

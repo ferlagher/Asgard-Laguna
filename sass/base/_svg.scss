@@ -1,0 +1,18 @@
+svg {
+    fill: $color-secondary;
+    height: $font-size-m;
+    width: $font-size-m;
+    &:hover {
+        fill: $color-hover;
+    }
+}
+
+main {
+    svg {
+        fill: $color-text;
+        opacity: 0.75;
+    }
+    a:hover svg {
+        fill: $color-hover;
+    }
+}
