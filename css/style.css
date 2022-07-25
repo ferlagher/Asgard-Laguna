@@ -130,8 +130,7 @@ header {
   border-bottom: 1px solid #4C555C;
 }
 header svg {
-  height: 100%;
-  width: 100%;
+  width: 6.6rem;
 }
 header span:hover {
   color: #BD6B31;
