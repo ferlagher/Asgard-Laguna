@@ -3,6 +3,7 @@
 h1 {
     @include font('main', 'thin', 'lg', 'text');
     margin: 2.25em 10% 2.25em 10%;
+    text-align: center;
 }
 
 h2 {
@@ -34,19 +35,15 @@ a {
     }
 }
 
-.hero {
-    div {
-        h2 {
-            @include font('condensed', 'bold', 'xxl', 'text');
-            text-shadow: map-get($sdw, 'text');
-            z-index: 1;
-            white-space: nowrap;
-        }
-        h3 {
-            @include font('main', 'regular', 'xl', 'accent');
-            z-index: 1;
-        }
-    }
+strong {
+    @include font('condensed', 'bold', 'xxl', 'text');
+    text-shadow: map-get($sdw, 'text');
+    z-index: 1;
+    white-space: nowrap;
+}
+em {
+    @include font('main', 'regular', 'xl', 'accent');
+    z-index: 1;
 }
 
 .section-nav {
@@ -62,28 +59,11 @@ a {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: map-get($ft-sz, 'lg');
-        white-space: normal;
-        text-align: end;
+        font-size: map-get($ft-sz, 'md');
     }
     
     h2 {
-        font-size: map-get($ft-sz, 'md');
-        white-space: normal;
-        text-align: end;
-    }
-    
-    h3 {
         font-size: map-get($ft-sz, 'sm');
-        margin: 2.75rem 0.625rem;
-    }
-    
-    h4 {
-        font-size: map-get($ft-sz, 'sm');
-    }
-    
-    h5 {
-        font-size: map-get($ft-sz, 'xxs');
     }
     
     p {
@@ -96,6 +76,16 @@ a {
     
     a:link {
         font-size: map-get($ft-sz, 'xs');
+    }
+    strong {
+        font-size: map-get($ft-sz, 'lg');
+        white-space: normal;
+        text-align: end;
+    }
+    em {
+        font-size: map-get($ft-sz, 'md');
+        white-space: normal;
+        text-align: end;
     }
     .section-nav {
         span {
