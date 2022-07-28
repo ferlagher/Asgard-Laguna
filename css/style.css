@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
+.fromleft {
+  animation: fromleft 1s ease-in-out;
+}
+
+.fromright {
+  animation: fromright 1s ease-in-out;
+}
+
+@keyframes fromleft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+}
+@keyframes fromright {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+}
+.fadein {
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,8 +71,8 @@ span {
 
 a:link {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.125rem;
   font-weight: 400;
+  font-size: 1.125rem;
   color: #A4571F;
   text-decoration: none;
   line-height: 1.5;
@@ -54,6 +83,35 @@ a:visited {
 }
 a:hover {
   color: #BD6B31;
+}
+
+.hero div h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #F3F5F8;
+  text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
+  z-index: 1;
+  white-space: nowrap;
+}
+.hero div h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #A4571F;
+  z-index: 1;
+}
+
+.section-nav span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #F3F5F8;
+  text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 768px) {
@@ -85,6 +143,9 @@ a:hover {
   }
   a:link {
     font-size: 1rem;
+  }
+  .section-nav span {
+    font-size: 1.5rem;
   }
 }
 svg {
@@ -126,6 +187,7 @@ main {
 }
 
 header {
+  grid-area: header;
   background-color: #202529;
   border-bottom: 1px solid #4C555C;
 }
@@ -178,16 +240,16 @@ footer ul {
     opacity: 1;
   }
 }
-.custom-button {
+.custom-button, .animated-button {
   background-color: #A4571F;
   border-color: #A4571F;
   display: flex;
   align-items: center;
 }
-.custom-button span {
+.custom-button span, .animated-button span {
   color: #F3F5F8;
 }
-.custom-button:hover, .custom-button:active, .custom-button:focus {
+.custom-button:hover, .animated-button:hover, .custom-button:active, .animated-button:active, .custom-button:focus, .animated-button:focus {
   background-color: #BD6B31;
   border-color: #BD6B31;
 }
@@ -226,21 +288,6 @@ footer ul {
 .hero {
   max-height: 90vh;
 }
-.hero div h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
-  z-index: 1;
-  white-space: nowrap;
-}
-.hero div h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: #A4571F;
-  z-index: 1;
-}
 
 .section-nav {
   height: auto;
@@ -270,17 +317,6 @@ footer ul {
 .section-nav div a:hover {
   background-color: rgba(32, 37, 41, 0.2);
 }
-.section-nav div a span {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  color: #F3F5F8;
-  text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .section-nav div.nav1 {
   background-image: url(../images/nav1.jpg);
   min-width: min(17rem, 100%);
@@ -302,32 +338,9 @@ footer ul {
   flex-grow: 1;
 }
 
-.fromleft {
-  animation: fromleft 1s ease-in-out;
-}
-
-.fromright {
-  animation: fromright 1s ease-in-out;
-}
-
-@keyframes fromleft {
-  0% {
-    transform: translateX(-20%);
-    opacity: 0;
-  }
-}
-@keyframes fromright {
-  0% {
-    transform: translateX(20%);
-    opacity: 0;
-  }
-}
 @media (max-width: 768px) {
-  section.section-nav {
+  .section-nav {
     gap: 1.25rem;
-  }
-  section.section-nav div a span {
-    font-size: 1.5rem;
   }
 }
 .gallery-img {
@@ -339,22 +352,35 @@ footer ul {
   opacity: 1;
 }
 
-.fadein {
-  animation: fadein 0.5s ease-in-out;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-}
 @media (max-width: 768px) {
   .gallery-img {
     opacity: 1;
   }
 }
-.cursor-pointer {
-  cursor: pointer;
+form div textarea, form div input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #F3F5F8;
+  width: 100%;
+  border: #4C555C 1px solid;
+  border-radius: 5px;
+  resize: none;
+  padding: 0.625em;
+  background-color: #191E22;
+  box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(15, 15, 15, 0.2), inset -0.3rem -0.3rem 0.3rem rgba(57, 57, 57, 0.2);
+}
+form div textarea:focus, form div input:focus {
+  outline: #A4571F 2px solid;
+}
+form div textarea:focus + label, form div input:focus + label, form div textarea:not(:placeholder-shown) + label, form div input:not(:placeholder-shown) + label {
+  transform: translate(5%, -50%) scale(0.9);
+  background-color: #191E22;
+  padding: 0.2em;
 }
 
 form {
@@ -366,8 +392,6 @@ form {
 }
 form div {
   position: relative;
-  font-weight: 300;
-  font-size: 1rem;
 }
 form div label {
   position: absolute;
@@ -378,46 +402,10 @@ form div label {
   font-family: "Roboto Condensed", sans-serif;
   transition: 0.2s ease;
 }
-form div input {
-  width: 100%;
-  border: #4C555C 1px solid;
-  border-radius: 5px;
-  resize: none;
-  font-family: "Roboto", sans-serif;
-  color: #F3F5F8;
-  padding: 0.625em;
-  background-color: #191E22;
-  box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(15, 15, 15, 0.2), inset -0.3rem -0.3rem 0.3rem rgba(57, 57, 57, 0.2);
-}
-form div input:focus {
-  outline: #A4571F 2px solid;
-}
-form div input:focus + label, form div input:not(:placeholder-shown) + label {
-  transform: translate(5%, -50%) scale(0.9);
-  background-color: #191E22;
-  padding: 0.2em;
-}
 form div input:-webkit-autofill {
   box-shadow: 0 0 0 10rem #191E22 inset;
   -webkit-text-fill-color: #F3F5F8;
 }
 form div textarea {
-  width: 100%;
   height: 8rem;
-  border: #4C555C 1px solid;
-  border-radius: 5px;
-  resize: none;
-  font-family: "Roboto", sans-serif;
-  color: #F3F5F8;
-  padding: 0.625em;
-  background-color: #191E22;
-  box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(15, 15, 15, 0.2), inset -0.3rem -0.3rem 0.3rem rgba(57, 57, 57, 0.2);
-}
-form div textarea:focus {
-  outline: #A4571F 2px solid;
-}
-form div textarea:focus + label, form div textarea:not(:placeholder-shown) + label {
-  transform: translate(5%, -50%) scale(0.9);
-  background-color: #191E22;
-  padding: 0.2em;
 }/*# sourceMappingURL=style.css.map */

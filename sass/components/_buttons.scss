@@ -1,18 +1,19 @@
 .custom-button {
-    background-color: $color-accent;
-    border-color: $color-accent;
+    background-color: map-get($clr, 'accent');
+    border-color: map-get($clr, 'accent');
     display: flex;
     align-items: center;
     span {
-        color: $color-text;
+        color: map-get($clr, 'text');
     }
     &:hover, &:active, &:focus {
-        background-color: $color-hover;
-        border-color: $color-hover;
+        background-color: map-get($clr, 'hover');
+        border-color: map-get($clr, 'hover');
     }
 }
 
 .animated-button {
+    @extend .custom-button;
     width: fit-content;
     span {
         transform: translateX(12%);
@@ -21,8 +22,8 @@
     div {
         height: 0.625rem;
         width: 0.625rem;
-        border-top: $color-text 2px solid;
-        border-right: $color-text 2px solid;
+        border-top: map-get($clr, 'text') 2px solid;
+        border-right: map-get($clr, 'text') 2px solid;
         transform: rotate(45deg) translate(-100%, 100%);
         opacity: 0;
         transition: 0.2s ease-in-out;

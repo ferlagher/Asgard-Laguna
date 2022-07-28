@@ -1,5 +1,5 @@
 .card{
-    box-shadow: $shadow-box;
+    box-shadow: map-get($sdw, 'box');
     .project {
     opacity: 0.75;
     transition: 0.3s ease-in-out;

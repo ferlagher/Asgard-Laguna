@@ -1,3 +1,24 @@
+%input {
+    @include font('main', 'light', 'xs', 'text');
+    width: 100%;
+    border: map-get($clr, 'secondary') 1px solid;
+    border-radius: $border-radius;
+    resize: none;
+    padding: 0.625em;
+    background-color: map-get($clr, 'form');
+    box-shadow: map-get($sdw, 'input');
+    &:focus {
+        outline: map-get($clr, 'accent') 2px solid;
+    }
+    &:focus, &:not(:placeholder-shown) {
+        + label {
+            transform: translate(5%, -50%) scale(0.9);
+            background-color: map-get($clr, 'form');
+            padding: 0.2em;
+        }
+    }
+}
+
 form{
     width: 100%;
     display: flex;
@@ -6,63 +27,25 @@ form{
     justify-content: space-between;
     div {
         position: relative;
-        font-weight: $font-weight-light;
-        font-size: $font-size-xs;
         label {
             position: absolute;
             top: 0;
             left: 0;
             padding: 0.625em;
-            color: $color-accent;
-            font-family: $font-secondary;
+            color: map-get($clr, 'accent');
+            font-family: map-get($ft-fy, 'condensed');
             transition: 0.2s ease;
         }
         input {
-            width: 100%;
-            border: $color-secondary 1px solid;
-            border-radius: $border-radius;
-            resize: none;
-            font-family: $font-main;
-            color: $color-text;
-            padding: 0.625em;
-            background-color: $color-form;
-            box-shadow: $shadow-input;
-            &:focus {
-                outline: $color-accent 2px solid
-            }
-            &:focus, &:not(:placeholder-shown) {
-                + label {
-                    transform: translate(5%, -50%) scale(0.9);
-                    background-color: $color-form;
-                    padding: 0.2em;
-                }
-            }
+            @extend %input;
             &:-webkit-autofill {
-                box-shadow: 0 0 0 10rem $color-form inset;
-                -webkit-text-fill-color: $color-text;
+                box-shadow: 0 0 0 10rem map-get($clr, 'form') inset;
+                -webkit-text-fill-color: map-get($clr, 'text');
             }
         }
         textarea {
-            width: 100%;
+            @extend %input;
             height: 8rem;
-            border: $color-secondary 1px solid;
-            border-radius: $border-radius;
-            resize: none;
-            font-family: $font-main;
-            color: $color-text;
-            padding: 0.625em;
-            background-color: $color-form;
-            box-shadow: $shadow-input;
-            &:focus {
-                outline: $color-accent 2px solid;
-            }
-            &:focus, &:not(:placeholder-shown) {
-                + label {
-                    transform: translate(5%, -50%) scale(0.9);
-                    background-color: $color-form;
-                    padding: 0.2em;
-                }
-            }
         }
     }
 }

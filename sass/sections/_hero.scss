@@ -1,20 +1,3 @@
 .hero {
     max-height: 90vh;
-    div {
-        h2 {
-            font-family: $font-secondary;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-xxl;
-            text-shadow: $shadow-text;
-            z-index: 1;
-            white-space: nowrap;
-        }
-        h3 {
-            font-family: $font-main;
-            font-weight: $font-weight-regular;
-            font-size: $font-size-xl;
-            color: $color-accent;
-            z-index: 1;
-        }
-    }
 }

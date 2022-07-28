@@ -1,28 +1,18 @@
 .gallery-img{
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
-    box-shadow: $shadow-box;
+    box-shadow: map-get($sdw, 'box');
     &:hover {
-        opacity: 1;
-    }
-}
-
-.fadein {
-    animation: fadein 0.5s ease-in-out;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery-img{
         opacity: 1;
     }
 }
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .gallery-img{
+        opacity: 1;
+    }
 }

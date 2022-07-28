@@ -1,7 +1,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: $color-main;
+    background-color: map-get($clr, 'primary');
     background-image: url(../images/bkgd.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ body {
         "header"
         "main"
         "footer";
-    grid-template-rows: $font-size-xxl auto $font-size-xxl;
+    grid-template-rows: map-get($ft-sz, 'xxl') auto map-get($ft-sz, 'xxl');
     grid-template-columns: auto;
 }
 

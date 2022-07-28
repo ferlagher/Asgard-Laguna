@@ -1,89 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap');
 
 h1 {
-    font-family: $font-main;
-    font-weight: $font-weight-thin;
-    font-size: $font-size-l;
-    color: $color-text;
+    @include font('main', 'thin', 'lg', 'text');
     margin: 2.25em 10% 2.25em 10%;
 }
 
 h2 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-m;
-    color: $color-text;
+    @include font('condensed', 'regular', 'md', 'text');
 }
 
 p {
-    font-family: $font-main;
-    font-weight: $font-weight-thin;
-    font-size: $font-size-s;
-    color: $color-text;
+    @include font('main', 'thin', 'sm', 'text');
     line-height: 1.5;
     margin-bottom: 1.1em;
 }
 
 span {
-    font-family: $font-secondary;
-    font-weight: $font-weight-regular;
-    font-size: $font-size-s;
-    color: $color-secondary;
+    @include font('condensed', 'regular', 'sm', 'secondary');
 }
 
 a {
     &:link {
-        font-family: $font-secondary;
-        font-size: $font-size-s;
-        font-weight: $font-weight-regular;
-        color: $color-accent;
+        @include font('condensed', 'regular', 'sm', 'accent');
         text-decoration: none;
         line-height: 1.5;
         white-space: nowrap;
     }
     &:visited {
-        color: $color-accent;
+        color: map-get($clr, 'accent');
     }
     &:hover {
-        color: $color-hover;
+        color: map-get($clr, 'hover');
+    }
+}
+
+.hero {
+    div {
+        h2 {
+            @include font('condensed', 'bold', 'xxl', 'text');
+            text-shadow: map-get($sdw, 'text');
+            z-index: 1;
+            white-space: nowrap;
+        }
+        h3 {
+            @include font('main', 'regular', 'xl', 'accent');
+            z-index: 1;
+        }
+    }
+}
+
+.section-nav {
+    span {
+        @include font('main', 'light', 'lg', 'text');
+        text-shadow: map-get($sdw, 'text');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
     }
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: $font-size-l;
+        font-size: map-get($ft-sz, 'lg');
         white-space: normal;
         text-align: end;
     }
     
     h2 {
-        font-size: $font-size-m;
+        font-size: map-get($ft-sz, 'md');
         white-space: normal;
         text-align: end;
     }
     
     h3 {
-        font-size: $font-size-s;
+        font-size: map-get($ft-sz, 'sm');
         margin: 2.75rem 0.625rem;
     }
     
     h4 {
-        font-size: $font-size-s;
+        font-size: map-get($ft-sz, 'sm');
     }
     
     h5 {
-        font-size: $font-size-xxs;
+        font-size: map-get($ft-sz, 'xxs');
     }
     
     p {
-        font-size: $font-size-xs;
+        font-size: map-get($ft-sz, 'xs');
     }
     
     span {
-        font-size: $font-size-xs;
+        font-size: map-get($ft-sz, 'xs');
     }
     
     a:link {
-        font-size: $font-size-xs;
+        font-size: map-get($ft-sz, 'xs');
+    }
+    .section-nav {
+        span {
+            font-size: map-get($ft-sz, 'md');
+        }
     }
 }

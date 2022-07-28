@@ -1,0 +1,35 @@
+// Index animations
+
+.fromleft {
+    animation: fromleft 1s ease-in-out;
+}
+
+.fromright {
+    animation: fromright 1s ease-in-out;
+}
+
+@keyframes fromleft {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+}
+
+@keyframes fromright {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+}
+
+// Gallery animations
+
+.fadein {
+    animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+}

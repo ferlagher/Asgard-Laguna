@@ -1,3 +1,10 @@
+@mixin font($fy, $wt, $sz, $cr) {
+    font-family: map-get($ft-fy, $fy);
+    font-weight: map-get($ft-wt, $wt);
+    font-size: map-get($ft-sz, $sz);
+    color: map-get($clr, $cr);
+}
+
 @mixin index-nav($bkgd, $min-w, $grow) {
     background-image: $bkgd;
     min-width: $min-w;

@@ -1,9 +1,9 @@
 footer {
     grid-area: footer;
-    background-color: $color-main;
-    border-top: 1px solid $color-secondary;
+    background-color: map-get($clr, 'primary');
+    border-top: 1px solid map-get($clr, 'secondary');
     span {
-        font-size: $font-size-xs;
+        font-size: map-get($ft-sz, 'xs');
     }
     ul {
         display: flex;
@@ -16,7 +16,7 @@ footer {
 @media (max-width: 768px) {
     footer {
         span {
-            font-size: $font-size-xxs;
+            font-size: map-get($ft-sz, 'xxs');
         }
     }
 }
