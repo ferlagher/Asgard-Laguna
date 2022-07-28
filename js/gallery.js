@@ -9,5 +9,5 @@ const obsGallery = new IntersectionObserver(entries => {
 });
 
 for (let i = 1; i < 10; i++) {
-    obsGallery.observe(document.querySelector('.img' + i));
+    obsGallery.observe(document.getElementById('img' + i));
 }
