@@ -1,4 +1,4 @@
-// Animación de index.html
+// Index animation
 
 const obsLeft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
