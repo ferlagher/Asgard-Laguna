@@ -166,11 +166,7 @@ main a:hover svg {
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #202529;
-  background-image: url(../images/bkgd.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: #202529 url(../images/bkgd.svg) no-repeat fixed;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: 4rem auto 4rem;

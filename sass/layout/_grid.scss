@@ -1,11 +1,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: map-get($clr, 'primary');
-    background-image: url(../images/bkgd.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: map-get($clr, 'primary') url(../images/bkgd.svg) no-repeat fixed;
     display: grid;
     grid-template-areas:
         "header"
