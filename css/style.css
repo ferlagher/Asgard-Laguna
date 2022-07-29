@@ -225,6 +225,9 @@ footer ul {
   opacity: 0.75;
   transition: 0.3s ease-in-out;
 }
+.card a {
+  flex-basis: 20%;
+}
 .card:hover .project {
   opacity: 1;
 }
