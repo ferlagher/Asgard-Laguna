@@ -225,9 +225,6 @@ footer ul {
   opacity: 0.75;
   transition: 0.3s ease-in-out;
 }
-.card a {
-  flex-basis: 20%;
-}
 .card:hover .project {
   opacity: 1;
 }
@@ -240,8 +237,8 @@ footer ul {
 .custom-button, .animated-button {
   background-color: #A4571F;
   border-color: #A4571F;
-  display: flex;
-  align-items: center;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
+  align-self: end;
 }
 .custom-button span, .animated-button span {
   color: #F3F5F8;
@@ -253,6 +250,8 @@ footer ul {
 
 .animated-button {
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 .animated-button span {
   transform: translateX(12%);
@@ -341,6 +340,7 @@ footer ul {
   }
 }
 .gallery-img {
+  height: auto;
   opacity: 0.6;
   transition: all 0.3s ease-in-out;
   box-shadow: -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
@@ -349,7 +349,8 @@ footer ul {
   opacity: 1;
 }
 
-.cursor-pointer {
+.gallery-container {
+  height: auto;
   cursor: pointer;
 }
 
