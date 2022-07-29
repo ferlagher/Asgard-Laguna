@@ -67,7 +67,7 @@ span {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  color: #4C555C;
+  color: #808D90;
 }
 
 a:link {
@@ -147,7 +147,7 @@ em {
   }
 }
 svg {
-  fill: #4C555C;
+  fill: #808D90;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -183,7 +183,7 @@ main {
 header {
   grid-area: header;
   background-color: #202529;
-  border-bottom: 1px solid #4C555C;
+  border-bottom: 1px solid #808D90;
 }
 header svg {
   width: 6.6rem;
@@ -201,7 +201,7 @@ header span:hover {
 footer {
   grid-area: footer;
   background-color: #202529;
-  border-top: 1px solid #4C555C;
+  border-top: 1px solid #808D90;
 }
 footer span {
   font-size: 1rem;
@@ -361,7 +361,7 @@ form div textarea, form div input {
   font-size: 1rem;
   color: #F3F5F8;
   width: 100%;
-  border: #4C555C 1px solid;
+  border: #808D90 1px solid;
   border-radius: 5px;
   resize: none;
   padding: 0.625em;
