@@ -1,52 +1,51 @@
 // Gallery pictures
 
 const images = [{
-        id: 'armor',
-        alt: 'Armadura',
-        imgCrop: '../images/armor.jpg',
-        imgFull: 'https://i.imgur.com/txvTW1R.jpg',
-    }, {
-        id: 'horse',
-        alt: 'Caballo',
-        imgCrop: '../images/horse.jpg',
-        imgFull: 'https://i.imgur.com/5vztuh9.jpg',
-    }, {
-        id: 'falcon',
-        alt: 'Halcón',
-        imgCrop: '../images/falcon.jpg',
-        imgFull: 'https://i.imgur.com/zRPYDya.jpg',
-    }, {
-        id: 'surfer',
-        alt: 'Surfista',
-        imgCrop: '../images/surfer.jpg',
-        imgFull: 'https://i.imgur.com/mjlGez7.jpg',
-    }, {
-        id: 'dragon',
-        alt: 'Dragón',
-        imgCrop: '../images/dragon.jpg',
-        imgFull: 'https://i.imgur.com/MgjCMQu.jpg',
-    }, {
-        id: 'reaper',
-        alt: 'Parca',
-        imgCrop: '../images/reaper.jpg',
-        imgFull: 'https://i.imgur.com/1UeAcgB.jpg',
-    }, {
-        id: 'geode',
-        alt: 'Geoda',
-        imgCrop: '../images/geode.jpg',
-        imgFull: 'https://i.imgur.com/VtCFYgq.jpg',
-    }, {
-        id: 'frame',
-        alt: 'Marco',
-        imgCrop: '../images/frame.jpg',
-        imgFull: 'https://i.imgur.com/X2KmUWc.jpg',
-    }, {
-        id: 'fish',
-        alt: 'Pez',
-        imgCrop: '../images/fish.jpg',
-        imgFull: 'https://i.imgur.com/pA5ZCYy.jpg',
-    }
-]
+    id: 'armor',
+    alt: 'Armadura',
+    imgCrop: '../images/armor.jpg',
+    imgFull: 'https://i.imgur.com/txvTW1R.jpg',
+}, {
+    id: 'horse',
+    alt: 'Caballo',
+    imgCrop: '../images/horse.jpg',
+    imgFull: 'https://i.imgur.com/5vztuh9.jpg',
+}, {
+    id: 'falcon',
+    alt: 'Halcón',
+    imgCrop: '../images/falcon.jpg',
+    imgFull: 'https://i.imgur.com/zRPYDya.jpg',
+}, {
+    id: 'surfer',
+    alt: 'Surfista',
+    imgCrop: '../images/surfer.jpg',
+    imgFull: 'https://i.imgur.com/mjlGez7.jpg',
+}, {
+    id: 'dragon',
+    alt: 'Dragón',
+    imgCrop: '../images/dragon.jpg',
+    imgFull: 'https://i.imgur.com/MgjCMQu.jpg',
+}, {
+    id: 'reaper',
+    alt: 'Parca',
+    imgCrop: '../images/reaper.jpg',
+    imgFull: 'https://i.imgur.com/1UeAcgB.jpg',
+}, {
+    id: 'geode',
+    alt: 'Geoda',
+    imgCrop: '../images/geode.jpg',
+    imgFull: 'https://i.imgur.com/VtCFYgq.jpg',
+}, {
+    id: 'frame',
+    alt: 'Marco',
+    imgCrop: '../images/frame.jpg',
+    imgFull: 'https://i.imgur.com/X2KmUWc.jpg',
+}, {
+    id: 'fish',
+    alt: 'Pez',
+    imgCrop: '../images/fish.jpg',
+    imgFull: 'https://i.imgur.com/pA5ZCYy.jpg',
+}];
 
 const addToGallery = images => {
     let gallery = '';
