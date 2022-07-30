@@ -55,7 +55,7 @@ Thank you for reading. <3
 [html5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [js]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [git]: https://img.shields.io/badge/GIT-E44C30?style=flat-square&logo=git&logoColor=white
-[photoshop]: https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat-square&logo=Adobe%20Photoshop&logoColor=black
+[photoshop]: https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat-square&logo=Adobe%20Photoshop&logoColor=white
 [illustrator]: https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=flat-square&logo=adobe%20illustrator&logoColor=white
 [figma]: https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white
 [vscode]:https://img.shields.io/badge/VSCode-0078D4?style=flat-square&logo=visual%20studio%20code&logoColor=white
