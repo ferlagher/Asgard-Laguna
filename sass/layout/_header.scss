@@ -5,16 +5,4 @@ header {
     svg {
         width: 6.6rem;
     }
-    span:hover {
-        color: map-get($clr, 'hover');
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        span{
-            font-size: map-get($ft-sz, 'md');
-            color: map-get($clr, 'accent');
-        }
-    }
 }

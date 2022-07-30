@@ -41,9 +41,22 @@ strong {
     z-index: 1;
     white-space: nowrap;
 }
+
 em {
     @include font('main', 'regular', 'xl', 'accent');
     z-index: 1;
+}
+
+header {
+    span:hover {
+        color: map-get($clr, 'hover');
+    }
+}
+
+footer {
+    span {
+        font-size: map-get($ft-sz, 'xs');
+    }
 }
 
 .section-nav {
@@ -58,38 +71,18 @@ em {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: map-get($ft-sz, 'md');
-    }
-    
-    h2 {
-        font-size: map-get($ft-sz, 'sm');
-    }
-    
-    p {
-        font-size: map-get($ft-sz, 'xs');
-    }
-    
-    span {
-        font-size: map-get($ft-sz, 'xs');
-    }
-    
-    a:link {
-        font-size: map-get($ft-sz, 'xs');
-    }
     strong {
-        font-size: map-get($ft-sz, 'lg');
         white-space: normal;
         text-align: end;
     }
     em {
-        font-size: map-get($ft-sz, 'md');
         white-space: normal;
         text-align: end;
     }
-    .section-nav {
-        span {
+    header {
+        span{
             font-size: map-get($ft-sz, 'md');
+            color: map-get($clr, 'accent');
         }
     }
 }

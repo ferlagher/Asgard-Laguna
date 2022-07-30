@@ -1,14 +1,29 @@
-# Mi first web project
+# *Asgard Esculturas* web site
 
-This is my project for my web developer course in Coderhouse.
+## Contents
+---
+ - Introduction
+ - Requirements
+ - Recommended modules
+ - Installation
+ - Configuration
+ - Troubleshooting
+ - FAQ
+ - Maintainers
 
-## Technologies used
+## Introduction
+---
+This is my first web site, created as a proyect for the Web Development couse 
+
+***Asgard Esculturas*** is an uruguayan metalurgic business specialized in iron sculptures.
+
+[Live site](https://ferlagher.github.io/Asgard-Laguna/)
+
+## Buided with
+---
 - HTML5
 - CSS3
   - SASS ♥
   - Bootstrap
-- A bit of JavaScript
+- JavaScript
 
-[This site](https://ferlagher.github.io/Asgard-Laguna/) is still in development.
-
-***Asgard Esculturas*** is an uruguayan metalurgic business specialized in iron sculptures.

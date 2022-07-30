@@ -7,7 +7,7 @@ body {
         "header"
         "main"
         "footer";
-    grid-template-rows: map-get($ft-sz, 'xxl') auto map-get($ft-sz, 'xxl');
+    grid-template-rows: min-content auto min-content;
     grid-template-columns: auto;
 }
 

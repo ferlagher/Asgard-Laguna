@@ -2,21 +2,10 @@ footer {
     grid-area: footer;
     background-color: map-get($clr, 'primary');
     border-top: 1px solid map-get($clr, 'secondary');
-    span {
-        font-size: map-get($ft-sz, 'xs');
-    }
     ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: $gap;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        span {
-            font-size: map-get($ft-sz, 'xxs');
-        }
     }
 }

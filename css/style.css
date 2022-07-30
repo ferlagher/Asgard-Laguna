@@ -41,7 +41,7 @@ ul {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.22vw, 2rem);
   color: #F3F5F8;
   margin: 2.25em 10% 2.25em 10%;
   text-align: center;
@@ -50,14 +50,14 @@ h1 {
 h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 1.66vw, 1.5rem);
   color: #F3F5F8;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
   color: #F3F5F8;
   line-height: 1.5;
   margin-bottom: 1.1em;
@@ -66,14 +66,14 @@ p {
 span {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
   color: #808D90;
 }
 
 a:link {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
   color: #A4571F;
   text-decoration: none;
   line-height: 1.5;
@@ -89,7 +89,7 @@ a:hover {
 strong {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4.44vw, 4rem);
   color: #F3F5F8;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   z-index: 1;
@@ -99,15 +99,23 @@ strong {
 em {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2.77vw, 2.5rem);
   color: #A4571F;
   z-index: 1;
+}
+
+header span:hover {
+  color: #BD6B31;
+}
+
+footer span {
+  font-size: clamp(0.875rem, 1.11vw, 1rem);
 }
 
 .section-nav span {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.22vw, 2rem);
   color: #F3F5F8;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   position: absolute;
@@ -117,39 +125,23 @@ em {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.125rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-  span {
-    font-size: 1rem;
-  }
-  a:link {
-    font-size: 1rem;
-  }
   strong {
-    font-size: 2rem;
     white-space: normal;
     text-align: end;
   }
   em {
-    font-size: 1.5rem;
     white-space: normal;
     text-align: end;
   }
-  .section-nav span {
-    font-size: 1.5rem;
+  header span {
+    font-size: clamp(1.125rem, 1.66vw, 1.5rem);
+    color: #A4571F;
   }
 }
 svg {
   fill: #808D90;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: clamp(1.125rem, 1.66vw, 1.5rem);
+  width: clamp(1.125rem, 1.66vw, 1.5rem);
 }
 svg:hover {
   fill: #BD6B31;
@@ -169,7 +161,7 @@ body {
   background: #202529 url(../images/bkgd.svg) no-repeat fixed;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 4rem auto 4rem;
+  grid-template-rows: min-content auto min-content;
   grid-template-columns: auto;
 }
 
@@ -188,23 +180,11 @@ header {
 header svg {
   width: 6.6rem;
 }
-header span:hover {
-  color: #BD6B31;
-}
 
-@media (max-width: 768px) {
-  header span {
-    font-size: 1.5rem;
-    color: #A4571F;
-  }
-}
 footer {
   grid-area: footer;
   background-color: #202529;
   border-top: 1px solid #808D90;
-}
-footer span {
-  font-size: 1rem;
 }
 footer ul {
   display: flex;
@@ -213,11 +193,6 @@ footer ul {
   gap: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  footer span {
-    font-size: 0.875rem;
-  }
-}
 .card {
   box-shadow: -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -362,7 +337,7 @@ footer ul {
 form div textarea, form div input {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1.11vw, 1rem);
   color: #F3F5F8;
   width: 100%;
   border: #808D90 1px solid;

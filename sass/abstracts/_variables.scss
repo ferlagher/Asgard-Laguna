@@ -20,13 +20,12 @@ $ft-wt: (
 );
 
 $ft-sz: (
-    xxl: calc(64rem / 16),
-    xl: calc(40rem / 16),
-    lg: calc(32rem / 16),
-    md: calc(24rem / 16),
-    sm: calc(18rem / 16),
-    xs: calc(16rem / 16),
-    xxs: calc(14rem / 16),
+    xxl: clamp(2rem, 4.44vw, 4rem),
+    xl: clamp(1.5rem, 2.77vw, 2.5rem),
+    lg: clamp(1.5rem, 2.22vw, 2rem),
+    md: clamp(1.125rem, 1.66vw, 1.5rem),
+    sm: clamp(1rem, 1.25vw, 1.125rem),
+    xs: clamp(0.875rem, 1.11vw, 1rem),
 );
 
 $sdw: (

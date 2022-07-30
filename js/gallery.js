@@ -50,7 +50,7 @@ const images = [{
 const addToGallery = images => {
     let gallery = '';
     for (let i = 0; i < images.length; i++) {
-        gallery += `<div id="img1" class="col mb-4 gallery-container">
+        gallery += `<div id="img${i + 1}" class="col mb-4 gallery-container">
                 <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#${images[i].id}">
                     <img class="card-img gallery-img" src=${images[i].imgCrop} alt=${images[i].alt}>
                 </div>
@@ -73,6 +73,18 @@ const addToGallery = images => {
 
 document.getElementById('gallery').innerHTML = addToGallery(images);
 
+// Masonry
+
+const container = document.getElementById('gallery');
+
+const msnry = new Masonry(container, {
+    percentPosition: true
+});
+
+imagesLoaded(container).on('progress', () => {
+    msnry.layout();
+});
+
 //Gallery animation
 
 const obsGallery = new IntersectionObserver(entries => {
@@ -83,6 +95,6 @@ const obsGallery = new IntersectionObserver(entries => {
     });
 });
 
-for (let i = 1; i < 10; i++) {
+for (let i = 1; i <= images.length; i++) {
     obsGallery.observe(document.getElementById('img' + i));
 }
