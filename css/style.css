@@ -378,7 +378,4 @@ form div label {
 form div input:-webkit-autofill {
   box-shadow: 0 0 0 10rem #191E22 inset;
   -webkit-text-fill-color: #F3F5F8;
-}
-form div textarea {
-  height: 8rem;
 }/*# sourceMappingURL=style.css.map */

@@ -109,7 +109,7 @@
                 <!-- 🡱 CONTACT 🡱 -->
                 <!-- 🡳 FORM 🡳 -->
                 <div class="col-12 col-sm-7 col-md-8 col-lg-9">
-                    <form onsubmit="email(); reset(); return false">
+                    <form action="../php/form.php" method="POST"">
                         <Legend><h2 class="h2-white">Escríbenos</h2></Legend>
                         <div>
                             <input type="text" id="name" name="nombre" placeholder=" " required>
@@ -120,7 +120,7 @@
                             <label for="email">E-mail</label>
                         </div>
                         <div>
-                            <textarea name="message" id="message" placeholder=" " required></textarea>
+                            <textarea name="message" id="message" placeholder=" " rows="5" required></textarea>
                             <label for="message">Mensaje</label>
                         </div>
                         <button class="btn animated-button" type="submit"><span>Enviar</span><div></div></button>
@@ -162,7 +162,6 @@
     <!-- 🡱 FOOTER 🡱 -->
     <!-- 🡳 SCRIPTS 🡳 -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="../js/form.js"></script>
     <!-- 🡱 SCRIPTS 🡱 -->
 </body>
