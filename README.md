@@ -16,7 +16,7 @@ This is my first web project, builded to learn the very basics of Web Developmen
 
 ***Asgard Esculturas*** is an uruguayan metalurgic business, founded by Guillermo Laguna, specialized in the creation of iron sculptures. It's mission is to create stunning pieces of art that will last forever and will make any ambient unique! 
 
-[**Live site here**](https://ferlagher.github.io/Asgard-Laguna/)  
+[**Live site here**](https://asgardesculturas.netlify.app)  
 (Please notice that the form is't functionally yet, if you want to contact Asgard, please use the links provided in the *Contact* page)
 
 ## Builded with

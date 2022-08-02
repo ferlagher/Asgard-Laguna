@@ -16,7 +16,7 @@ Este es mi primer proyecto web, hecho para aprender los conceptos básicos del D
 
 ***Asgard Esculturas*** es una empresa metalúrgica uruguaya, fundada por Guillermo Laguna, especializada en la creación de esculturas de hierro. Su misión es crear impresionantes piezas de arte que durarán toda la vida, ¡y harán que cualquier ambiente sea único! 
 
-[**Ir al sitio web**](https://ferlagher.github.io/Asgard-Laguna/)  
+[**Ir al sitio web**](https://asgardesculturas.netlify.app)  
 (Aviso: El formulario de contacto todavía no funciona, si desea ponerse en contacto con Asgard, por favor utilice los links de la sección de *Contacto*)
 
 ## Creado con
