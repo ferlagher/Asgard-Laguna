@@ -1,0 +1,26 @@
+{
+  "name": "asgard-laguna",
+  "version": "1.0.0",
+  "description": "Asgard Esculturas is an uruguayan metalurgic business, founded by Guillermo Laguna, specialized in the creation of iron sculptures.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss ./sass/style.scss ./css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferlagher/Asgard-Laguna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferlagher/Asgard-Laguna/issues"
+  },
+  "homepage": "https://github.com/ferlagher/Asgard-Laguna#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

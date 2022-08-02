@@ -9,7 +9,7 @@
         background-position: center;
         background-size: cover;
         border-radius: $border-radius;
-        height: min(17rem, 40vw);
+        height: MIN(17rem, 40vw); //MIN() is uppercase to avoid error: "Incompatible units: 'vw' and 'rem'."
         box-shadow: map-get($sdw, 'box');
         display: flex;
         justify-content: center;
@@ -26,7 +26,7 @@
         }
         &.nav{
             &1 {
-                @include index-nav(url(../images/nav1.jpg), min(17rem, 100%), 1);
+                @include index-nav(url(../images/nav1.jpg), MIN(17rem, 100%), 1); //MIN() is uppercase to avoid error: "Incompatible units: '%' and 'rem'."
             }
             &2 {
                 @include index-nav(url(../images/nav2.jpg), 50%, 2);
@@ -35,7 +35,7 @@
                 @include index-nav(url(../images/nav3.jpg), 50%, 2);
             }
             &4 {
-                @include index-nav(url(../images/nav4.jpg), min(17rem, 100%), 1);
+                @include index-nav(url(../images/nav4.jpg), MIN(17rem, 100%), 1); //MIN() is uppercase to avoid error: "Incompatible units: '%' and 'rem'."
             }
         }
     }
