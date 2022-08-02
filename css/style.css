@@ -71,7 +71,7 @@ a:visited {
   color: #A4571F; }
 
 a:hover {
-  color: #BD6B31; }
+  color: #be733d; }
 
 strong {
   font-family: "Roboto Condensed", sans-serif;
@@ -90,7 +90,7 @@ em {
   z-index: 1; }
 
 header span:hover {
-  color: #BD6B31; }
+  color: #be733d; }
 
 footer span {
   font-size: clamp(0.875rem, 1.11vw, 1rem); }
@@ -122,14 +122,14 @@ svg {
   height: clamp(1.125rem, 1.66vw, 1.5rem);
   width: clamp(1.125rem, 1.66vw, 1.5rem); }
   svg:hover {
-    fill: #BD6B31; }
+    fill: #be733d; }
 
 main svg {
   fill: #F3F5F8;
   opacity: 0.75; }
 
 main a:hover svg {
-  fill: #BD6B31; }
+  fill: #be733d; }
 
 body {
   width: 100%;
@@ -183,8 +183,8 @@ footer {
   .custom-button span, .animated-button span {
     color: #F3F5F8; }
   .custom-button:hover, .animated-button:hover, .custom-button:active, .animated-button:active, .custom-button:focus, .animated-button:focus {
-    background-color: #BD6B31;
-    border-color: #BD6B31; }
+    background-color: #be733d;
+    border-color: #be733d; }
 
 .animated-button {
   width: fit-content;
