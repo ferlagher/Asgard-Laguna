@@ -2,17 +2,12 @@ svg {
     fill: map-get($clr, 'secondary');
     height: map-get($ft-sz, 'md');
     width: map-get($ft-sz, 'md');
+    transition: 0.3s;
     &:hover {
         fill: map-get($clr, 'hover');
     }
 }
 
-main {
-    svg {
-        fill: map-get($clr, 'text');
-        opacity: 0.75;
-    }
-    a:hover svg {
-        fill: map-get($clr, 'hover');
-    }
+a:hover svg {
+    fill: map-get($clr, 'hover');
 }

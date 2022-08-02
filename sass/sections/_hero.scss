@@ -1,3 +1,7 @@
 .hero {
     max-height: 90vh;
+    border-bottom: $border;
+    picture {
+        filter: brightness(0.95) saturate(0.95);
+    }
 }

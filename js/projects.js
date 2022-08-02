@@ -29,7 +29,7 @@ const projects = [{
 const addToProjects = projects => {
     let cards = '';
     for (i = 0; i < projects.length; i++) {
-        cards += `<div class="px-3">
+        cards += `<div id="pj${i + 1}" class="px-3">
                 <div class="card bg-dark h-100 p-0 shadow">
                     <img src=${projects[i].img} class="card-img-top project" alt=${projects[i].alt}>
                     <div class="card-body d-flex flex-wrap justify-content-between">
@@ -48,3 +48,19 @@ const addToProjects = projects => {
 }
 
 document.getElementById('projects').innerHTML = addToProjects(projects);
+
+//Projects animation
+
+const obsGallery = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fadein');
+            return;
+        }
+        entry.target.classList.remove('fadein');
+    });
+});
+
+for (let i = 1; i <= projects.length; i++) {
+    obsGallery.observe(document.getElementById('pj' + i));
+}

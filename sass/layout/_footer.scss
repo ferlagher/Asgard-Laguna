@@ -1,7 +1,7 @@
 footer {
     grid-area: footer;
     background-color: map-get($clr, 'primary');
-    border-top: 1px solid map-get($clr, 'secondary');
+    border-top: $border;
     ul {
         display: flex;
         justify-content: space-between;

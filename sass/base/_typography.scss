@@ -21,6 +21,7 @@ span {
 }
 
 a {
+    transition: 0.3s;
     &:link {
         @include font('condensed', 'regular', 'sm', 'accent');
         text-decoration: none;
@@ -40,17 +41,25 @@ strong {
     text-shadow: map-get($sdw, 'text');
     z-index: 1;
     white-space: nowrap;
+    animation: fromright 1s ease-in-out forwards;
 }
 
 em {
-    @include font('main', 'regular', 'xl', 'accent');
+    @include font('main', 'regular', 'xl', 'text');
+    text-shadow: map-get($sdw, 'text');
     z-index: 1;
+    opacity: 0.9;
+    animation: fromright 1.3s ease-in-out forwards;
 }
 
 header {
-    span:hover {
-        color: map-get($clr, 'hover');
+    span {
+        transition: 0.3s;
+        &:hover {
+            color: map-get($clr, 'hover');
+        }
     }
+
 }
 
 footer {
@@ -80,9 +89,11 @@ footer {
         text-align: end;
     }
     header {
-        span{
-            font-size: map-get($ft-sz, 'md');
-            color: map-get($clr, 'accent');
+        a {
+            span{
+                font-size: map-get($ft-sz, 'lg');
+                color: map-get($clr, 'accent');
+            }
         }
     }
 }

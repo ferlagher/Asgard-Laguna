@@ -70,6 +70,9 @@ span {
   color: #808D90;
 }
 
+a {
+  transition: 0.3s;
+}
 a:link {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -94,16 +97,23 @@ strong {
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   z-index: 1;
   white-space: nowrap;
+  animation: fromright 1s ease-in-out forwards;
 }
 
 em {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: clamp(1.5rem, 2.77vw, 2.5rem);
-  color: #A4571F;
+  color: #F3F5F8;
+  text-shadow: 0.2rem 0.2rem 0.3rem rgba(26, 30, 34, 0.5);
   z-index: 1;
+  opacity: 0.9;
+  animation: fromright 1.3s ease-in-out forwards;
 }
 
+header span {
+  transition: 0.3s;
+}
 header span:hover {
   color: #be733d;
 }
@@ -133,8 +143,8 @@ footer span {
     white-space: normal;
     text-align: end;
   }
-  header span {
-    font-size: clamp(1.125rem, 1.66vw, 1.5rem);
+  header a span {
+    font-size: clamp(1.5rem, 2.22vw, 2rem);
     color: #A4571F;
   }
 }
@@ -142,16 +152,13 @@ svg {
   fill: #808D90;
   height: clamp(1.125rem, 1.66vw, 1.5rem);
   width: clamp(1.125rem, 1.66vw, 1.5rem);
+  transition: 0.3s;
 }
 svg:hover {
   fill: #be733d;
 }
 
-main svg {
-  fill: #F3F5F8;
-  opacity: 0.75;
-}
-main a:hover svg {
+a:hover svg {
   fill: #be733d;
 }
 
@@ -197,6 +204,7 @@ footer ul {
   box-shadow: -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.2), 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 .card .project {
+  border-bottom: 1px solid #808D90;
   opacity: 0.75;
   transition: 0.3s ease-in-out;
 }
@@ -258,6 +266,10 @@ footer ul {
 
 .hero {
   max-height: 90vh;
+  border-bottom: 1px solid #808D90;
+}
+.hero picture {
+  filter: brightness(0.95) saturate(0.95);
 }
 
 .section-nav {

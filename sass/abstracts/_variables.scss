@@ -37,4 +37,5 @@ $sdw: (
 $gap: calc(20rem / 16);
 $gap-nav: calc(40rem / 16);
 
+$border: 1px solid map-get($clr, 'secondary');
 $border-radius: 5px;

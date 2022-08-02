@@ -1,8 +1,9 @@
 .card{
     box-shadow: map-get($sdw, 'box');
     .project {
-    opacity: 0.75;
-    transition: 0.3s ease-in-out;
+        border-bottom: $border;
+        opacity: 0.75;
+        transition: 0.3s ease-in-out;
     }
     &:hover {
         .project{
