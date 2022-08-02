@@ -91,7 +91,9 @@ const obsGallery = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fadein');
+            return;
         }
+        entry.target.classList.remove('fadein');
     });
 });
 
