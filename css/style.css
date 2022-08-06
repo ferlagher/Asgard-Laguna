@@ -117,6 +117,9 @@ header span {
 header span:hover {
   color: #be733d;
 }
+header .current-page {
+  color: #A4571F;
+}
 
 footer span {
   font-size: clamp(0.875rem, 1.11vw, 1rem);

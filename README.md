@@ -16,8 +16,7 @@ This is my first web project, builded to learn the very basics of Web Developmen
 
 ***Asgard Esculturas*** is an uruguayan metalurgic business, founded by Guillermo Laguna, specialized in the creation of iron sculptures. It's mission is to create stunning pieces of art that will last forever and will make any ambient unique! 
 
-[**Live site here**][as] [![ny]][ny-link]  
-(Please notice that the form is't functionally yet, if you want to contact Asgard, please use the links provided in the *Contact* page)
+[**Live site here**][as] [![ny]][ny-link]
 
 ## Builded with
 
@@ -37,7 +36,7 @@ This is my first web project, builded to learn the very basics of Web Developmen
 
 As this is my first time writing code, I had to learn all the basics of HTML, CSS and JS.
 I started learning HTML5 and building the structure of my site, then I continued with CSS. I leaned a lot about flexbox, grid, responsiveness, animations (the funniest part of CSS), and many other things. I enjoy writing CSS, and now even more since I started using Sass. I also tried Bootstrap. 
-About JavaScript, I've just begun practising, that's why the site isn't very interactive yet. I used JS to make some animations trigger when the elements are scrolled to the window. Also, I've implemented some librarys to make the masonry layout for the gallery. I still have to make the form functionally, so if you want to contact Asgard, please use the links provided in the *Contact* section.
+About JavaScript, I've just begun practising, that's why the site isn't very interactive yet. I used JS to make some animations trigger when the elements are scrolled to the window. Also, I've implemented some librarys to make the masonry layout for the gallery.
 
 ## Author
 

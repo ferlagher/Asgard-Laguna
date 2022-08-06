@@ -16,8 +16,7 @@ Este es mi primer proyecto web, hecho para aprender los conceptos básicos del D
 
 ***Asgard Esculturas*** es una empresa metalúrgica uruguaya, fundada por Guillermo Laguna, especializada en la creación de esculturas de hierro. Su misión es crear impresionantes piezas de arte que durarán toda la vida, ¡y harán que cualquier ambiente sea único! 
 
-[**Live site here**][as] [![ny]][ny-link]  
-(Aviso: El formulario de contacto todavía no funciona, si desea ponerse en contacto con Asgard, por favor utilice los links de la sección de *Contacto*)
+[**Live site here**][as] [![ny]][ny-link]
 
 ## Creado con
 
@@ -37,7 +36,7 @@ Este es mi primer proyecto web, hecho para aprender los conceptos básicos del D
 
 Esta es la primera vez que escribo código, así que tuve que aprender todo lo básico de HTML, CSS y JS.
 Empecé por aprender HTML5 y creé la estructura del sitio, luego seguí con CSS. Aprendí un montón sobre flexbox, grid, responsividad, animaciones (lo mejor de CSS), y muchas otras cosas. Me encanta escribir CSS, y desde que aprendí Sass me gusta todavía más. También probé Bootstrap. 
-Recién empecé a practicar con JavaScript, por eso es que el sitio es poco interactivo por ahora. Usé JS para hacer que ciertas animaciones se activen cuando aparecen en la pantalla. También implementé unas librerías para hacer el diseño de la galería. Todavía me queda hacer que el formulario sea funcional, así que si desea ponerse en contacto con Asgard, por favor utilice los links de la sección de *Contacto*.
+Recién empecé a practicar con JavaScript, por eso es que el sitio es poco interactivo por ahora. Usé JS para hacer que ciertas animaciones se activen cuando aparecen en la pantalla. También implementé unas librerías para hacer el diseño de la galería.
 
 ## Autor
 

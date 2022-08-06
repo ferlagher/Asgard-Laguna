@@ -59,6 +59,9 @@ header {
             color: map-get($clr, 'hover');
         }
     }
+    .current-page {
+        color: map-get($clr, 'accent');
+    }
 
 }
 
