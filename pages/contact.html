@@ -109,18 +109,18 @@
                 <!-- 🡱 CONTACT 🡱 -->
                 <!-- 🡳 FORM 🡳 -->
                 <div class="col-12 col-sm-7 col-md-8 col-lg-9">
-                    <form action="https://formspree.io/f/mqkjzpde" method="POST">
+                    <form action="alert('Mensaje enviado')" name='Contacto' netlify>
                         <Legend><h2 class="h2-white">Escríbenos</h2></Legend>
                         <div>
-                            <input type="text" id="name" name="Nombre" placeholder=" " required>
+                            <input type="text" name="Nombre" placeholder=" " required>
                             <label for="name">Nombre</label>
                         </div>
                         <div>
-                            <input type="email" id="email" name="Email" placeholder=" " required>
+                            <input type="email" name="Email" placeholder=" " required>
                             <label for="email">E-mail</label>
                         </div>
                         <div>
-                            <textarea id="message" name="Mensaje" placeholder=" " rows="5" required></textarea>
+                            <textarea rows="5" name="Mensaje" placeholder=" " required></textarea>
                             <label for="message">Mensaje</label>
                         </div>
                         <button class="btn animated-button" type="submit"><span>Enviar</span><div></div></button>
