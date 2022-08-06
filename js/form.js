@@ -9,6 +9,9 @@ form.addEventListener("submit", e => {
             },
             body: new URLSearchParams(formData).toString(),
         })
-        .then(() => alert("Form successfully submitted"))
+        .then(() => {
+            alert("Mensaje enviado. Gracias por ponerse en contacto. Le responderemos a la brevedad.");
+            form.reset();
+        })
         .catch((error) => alert(error));
 });
